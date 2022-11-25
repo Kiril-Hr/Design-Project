@@ -68,17 +68,29 @@ header .inform .container-inform div:nth-child(3)::after {
   left: -35px;
 }
 header .inform .change-lang {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .inform .change-lang .change-lang-input {
+  display: none;
+}
+header .inform .change-lang .change-lang-btn {
   position: relative;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
+  border: 0;
+  background-color: unset;
   color: #FFFFFF;
   cursor: pointer;
 }
-header .inform .change-lang::after {
+header .inform .change-lang .change-lang-btn::after {
   content: "";
+  cursor: pointer;
   position: absolute;
   background-image: url(assets/home-page-02/arrow-white.png);
   background-position: center;
@@ -87,6 +99,36 @@ header .inform .change-lang::after {
   width: 12px;
   top: 8px;
   right: -17px;
+  transition: all 0.3s ease-out;
+}
+header .inform .change-lang .change-lang-btn.active::after {
+  transform: rotate(90deg);
+}
+header .inform .change-lang .change-lang-list.active {
+  display: flex;
+  align-items: center;
+}
+header .inform .change-lang .change-lang-list {
+  position: absolute;
+  display: none;
+  left: -300px;
+  z-index: 25;
+}
+header .inform .change-lang .change-lang-list .change-lang-item {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: white;
+  padding: 0 15px;
+}
+header .inform .change-lang .change-lang-list .change-lang-item:last-child {
+  border-right: 2px solid rgb(255, 255, 255);
+}
+header .inform .change-lang .change-lang-list .change-lang-item:hover {
+  text-decoration: underline;
 }
 header .container-logo-menu {
   display: flex;
@@ -166,6 +208,9 @@ header .container-big-inform {
   background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.7) -39.14%, rgba(251, 246, 238, 0.2) 70.23%);
   display: flex;
   justify-content: space-between;
+}
+header .container-big-inform a:hover {
+  text-decoration: underline;
 }
 header .container-big-inform .aside-img {
   align-self: flex-end;

@@ -1,6 +1,37 @@
-const faqDet = document.querySelectorAll(".faq-detail");
-const plus = document.querySelectorAll(".plus");
-const triggerAccordion = document.querySelectorAll(".accordion-trigger");
+////////////////////////////// - Change lang
+document.querySelectorAll(".change-lang").forEach((changeLang) => {
+  const changeLangBtn = changeLang.querySelector(".change-lang-btn");
+  const changeLangList = changeLang.querySelector(".change-lang-list");
+  const changeLangItem = changeLang.querySelectorAll(".change-lang-item");
+  const changeLangInput = changeLang.querySelector(".change-lang-input");
+
+  changeLangBtn.addEventListener("click", () => {
+    changeLangBtn.classList.toggle("active");
+    changeLangList.classList.toggle("active");
+  });
+
+  changeLangItem.forEach((item) => {
+    console.log(item);
+    item.addEventListener("click", (e) => {
+      e.stopPropagation();
+      let swapText = changeLangBtn.innerText;
+      changeLangBtn.innerText = item.innerText;
+      item.innerText = swapText;
+      changeLangInput.value = item.dataset.value;
+      item.dataset.value = swapText;
+      changeLangBtn.classList.remove("active");
+      changeLangList.classList.remove("active");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (e.target !== changeLangBtn) {
+      changeLangBtn.classList.remove("active");
+      changeLangList.classList.remove("active");
+    }
+  });
+});
+
 /////////////////////////// - slider
 let position = 0;
 const NumberOfSlideScrolls = 2;
@@ -63,6 +94,7 @@ btnPrev.addEventListener("click", () => {
   }
 });
 ///////////////////////////////// - Faq
+const triggerAccordion = document.querySelectorAll(".accordion-trigger");
 triggerAccordion.forEach((item) => {
   item.addEventListener("click", () => {
     item.parentNode.classList.toggle("quest-answ--active");
