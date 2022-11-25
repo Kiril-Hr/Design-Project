@@ -1,6 +1,6 @@
 const faqDet = document.querySelectorAll(".faq-detail");
 const plus = document.querySelectorAll(".plus");
-const questAnsw = document.querySelectorAll(".quest-answ");
+const triggerAccordion = document.querySelectorAll(".accordion-trigger");
 /////////////////////////// - slider
 let position = 0;
 const NumberOfSlideScrolls = 2;
@@ -63,3 +63,8 @@ btnPrev.addEventListener("click", () => {
   }
 });
 ///////////////////////////////// - Faq
+triggerAccordion.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.parentNode.classList.toggle("quest-answ--active");
+  });
+});

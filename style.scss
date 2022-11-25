@@ -172,16 +172,26 @@ header {
         .aside-img {
             align-self: flex-end;
             position: relative;
-            background: #C4C4C4;
+            // background: #C4C4C4;
             width: 197px;
             height: 278px;
             bottom: 60px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
             }
         .aside-img-right {
             margin-top: 46px;
+            border-top-left-radius: 10%;
             background: #C4C4C4;
             width: 1013px;
             height: 673px;
+            img {
+                border-top-left-radius: 10%;
+                width: 100%;
+                height: 100%;
+            }
         }
         .big-inform {
             margin: 133px 0 100px 60px;
@@ -295,116 +305,117 @@ main {
             text-align: center;
             color: #676767;
         }
-    }
-    .container-to-services-block {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-        margin-top: 50px;
-        .block-serv {
+        .container-to-services-block {
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            padding: 26px 44px 60px;
-            width: 330px;
-            height: 366px;
-            background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
-            box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-            border-radius: 10px;
-            &:nth-child(1) {
-                background: #00730C;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            .block-serv {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 26px 44px 60px;
+                width: 330px;
+                height: 366px;
+                background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+                box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                border-radius: 10px;
+                &:nth-child(1) {
+                    background: #00730C;
+                    h5 {
+                        color: #FFFFFF;
+                    }
+                    p {
+                        color: #FFFFFF;
+                    }
+                }
                 h5 {
-                    color: #FFFFFF;
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-align: center;
+                    text-transform: capitalize;
+                    color: #212529;
+                    margin-bottom: 10px;
                 }
                 p {
-                    color: #FFFFFF;
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #676767;
                 }
-            }
-            h5 {
-                font-family: 'Nunito';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 33px;
-                text-align: center;
-                text-transform: capitalize;
-                color: #212529;
-                margin-bottom: 10px;
-            }
-            p {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 28px;
-                text-align: center;
-                color: #676767;
-            }
-            [class*='icon-descr-'] {
-                position: relative;
-                &::before {
-                    content: "";
-                    display: block;
+                [class*='icon-descr-'] {
                     position: relative;
-                    width: 176px;
-                    height: 145px;
-                    background-image: url(assets/home-page-02/leest.png);
-                    background-repeat: no-repeat;
-                    background-position: center;
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: relative;
+                        width: 176px;
+                        height: 145px;
+                        background-image: url(assets/home-page-02/leest.png);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 70px;
+                        height: 70px;
+                        top: 25%;
+                        left: 30%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
                 }
-                &::after {
-                    content: '';
-                    position: absolute;
-                    width: 70px;
-                    height: 70px;
-                    top: 25%;
-                    left: 30%;
-                    background-repeat: no-repeat;
-                    background-position: center;
+                .icon-descr-1 {
+                    &::after {
+                        background-image: url(assets/home-page-02/Tree-Planting.png);
+                    }
+                    &::before {
+                        opacity: 0.2;
+                    }   
                 }
-            }
-            .icon-descr-1 {
-                &::after {
-                    background-image: url(assets/home-page-02/Tree-Planting.png);
+                .icon-descr-2 {
+                    &::after {
+                        background-image: url(assets/home-page-02/spec-mach.png);
+                    }
                 }
-                &::before {
-                    opacity: 0.2;
-                }   
-            }
-            .icon-descr-2 {
-                &::after {
-                    background-image: url(assets/home-page-02/spec-mach.png);
+                .icon-descr-3 {
+                    &::after {
+                        background-image: url(assets/home-page-02/Garden-Design.png);
+                    }
                 }
-            }
-            .icon-descr-3 {
-                &::after {
-                    background-image: url(assets/home-page-02/Garden-Design.png);
+                .icon-descr-4 {
+                    &::after {
+                        background-image: url(assets/home-page-02/Plant-Growing.png);
+                    }
                 }
-            }
-            .icon-descr-4 {
-                &::after {
-                    background-image: url(assets/home-page-02/Plant-Growing.png);
+                .icon-descr-5 {
+                    &::after {
+                        background-image: url(assets/home-page-02/Glyph.png);
+                    }
                 }
-            }
-            .icon-descr-5 {
-                &::after {
-                    background-image: url(assets/home-page-02/Glyph.png);
+                .icon-descr-6 {
+                    &::after {
+                        background-image: url(assets/home-page-02/Cutting-Branch.png);
+                    }
                 }
-            }
-            .icon-descr-6 {
-                &::after {
-                    background-image: url(assets/home-page-02/Cutting-Branch.png);
+                .icon-descr-7 {
+                    &::after {
+                        background-image: url(assets/home-page-02/Agricultural-pests.png);
+                    }
                 }
-            }
-            .icon-descr-7 {
-                &::after {
-                    background-image: url(assets/home-page-02/Agricultural-pests.png);
-                }
-            }
-            .icon-descr-8 {
-                &::after {
-                    background-image: url(assets/home-page-02/Growing-Money.png);
+                .icon-descr-8 {
+                    &::after {
+                        background-image: url(assets/home-page-02/Growing-Money.png);
+                    }
                 }
             }
         }
@@ -425,21 +436,29 @@ main {
             }
             .img-compn-exstnc-1 {
                 position: absolute;
-                width: 601px;
-                height: 741px;
+                max-width: 601px;
+                max-height: 741px;
                 background: #C4C4C4;
                 top: 36px;
                 left: 24px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
             .img-compn-exstnc-2 {
-                background: #C4C4C4;
-                border: 15px solid #FFFFFF;
+                // background: #C4C4C4;
                 border-radius: 10px;
-                width: 456px;
-                height: 306px;
+                max-width: 456px;
+                max-height: 306px;
                 position: absolute;
                 bottom: -70px;
                 left: 237px;
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
         .about-our-exp {
@@ -616,9 +635,13 @@ main {
             width: 48%;
             padding: 115px 0;
             .image-choose-us {
-                width: 672px;
-                height: 426px;
+                max-width: 672px;
+                max-height: 426px;
                 background: #C4C4C4;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
@@ -654,6 +677,7 @@ main {
         }
         .blocks-work-proc {
             display: flex;
+            justify-content: center;
             gap: 30px;
             [class*='block-work-proc-'] {
                 display: flex;
@@ -758,28 +782,37 @@ main {
         }
     }
     .img-propose-to-call {
-        background: #C4C4C4;
-        border-radius: 10px;
-        margin: 0 255px;
-        width: fit-content;
-        height: fit-content;
-        .img-propose {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            width: 1410px;
-            height: 247px;
-            h4 {
-                font-family: 'Nunito';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 33px;
-                line-height: 45px;
-                color: #FFFFFF;
-                margin-right: 85px;
-            }
-            button {
-                margin-right: 60px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .container-propose {
+            // background: #C4C4C4;
+            margin: 0 255px;
+            width: fit-content;
+            height: fit-content;
+            .img-propose {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 1410px;
+                height: 247px;
+                background-image: url(assets/backgrounds/worker-take-care-flowerpoots-girl-white-shirt-woman-gloves.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 10px;
+                h4 {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 33px;
+                    line-height: 45px;
+                    color: #FFFFFF;
+                    margin-right: 85px;
+                }
+                button {
+                    margin-right: 60px;
+                }
             }
         }
     }
@@ -825,14 +858,28 @@ main {
         }
         .blocks-train-staff {
             display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             gap: 30px;
             [class*='block-personal'] {
-                width: 330px;
-                height: 408px;
+                max-width: 330px;
+                max-height: 408px;
                 background: #C4C4C4;
                 border-radius: 10px;
                 overflow: hidden;
                 cursor: pointer;
+                &:nth-child(1) {
+                    background-image: url(assets/backgrounds/beautiful-woman-apron-posing-among-flowers-orangery.png);
+                }
+                &:nth-child(2) {
+                    background-image: url(assets/backgrounds/gardeners-with-plants-beautiful-garden-center.png);
+                }
+                &:nth-child(3) {
+                    background-image: url(assets/backgrounds/young-beautiful-florist-posing-smiling-among-flowers.png);
+                }
+                &:nth-child(4) {
+                    background-image: url(assets/backgrounds/portrait-happy-professional-gardener-holding-flowerpot-watering-can.png);
+                }
                 &:hover [class*='inner-block'] {
                     margin-top: 0px;
                 }
@@ -878,19 +925,19 @@ main {
                         background-position: center;
                         background-repeat: no-repeat;
                         &:nth-child(1) {
-                            background-image: url(assets/home-page-02/Google.png);
+                            background-image: url(assets/home-page-02/Tr-Google.png);
                         }
                         &:nth-child(2) {
-                            background-image: url(assets/home-page-02/facebook.png);
+                            background-image: url(assets/home-page-02/Tr-facebook.png);
                         }
                         &:nth-child(3) {
-                            background-image: url(assets/home-page-02/twitter.png);
+                            background-image: url(assets/home-page-02/Tr-twitter.png);
                         }
                         &:nth-child(4) {
                             background-image: url(assets/home-page-02/pinterest.png);
                         }
                         &:nth-child(5) {
-                            background-image: url(assets/home-page-02/linkedin.png);
+                            background-image: url(assets/home-page-02/Tr-linkedin.png);
                         }
                     }
                 }
@@ -980,7 +1027,7 @@ main {
         }
         .container-slider {
             width: 1425px;
-            margin: 0 255px;
+            margin: 0 auto;
             padding: 15px 0;
             overflow: hidden;
             .slider-1 {
@@ -1015,7 +1062,7 @@ main {
                             .img-slide {
                                 width: 32.5%;
                                 height: 100%;
-                                background: #C4C4C4;
+                                // background: #C4C4C4;
                             }
                             .inform-slide {
                                 margin-top: 30px;
@@ -1118,8 +1165,9 @@ main {
                     margin-bottom: 30px;
                     position: relative;
                     cursor: pointer;
-                    .container-line-plus-h4 {
+                    .accordion-trigger {
                         display: flex;
+                        justify-content: space-between;
                         background: #FFF8F1;
                         border-radius: 5px;
                         .plus {
@@ -1133,7 +1181,7 @@ main {
                                     height: 3px;
                                     background: #212529;
                                     top: 8px;
-                                    transition: all 0.5s ease-in-out;
+                                    transition: all 0.35s ease-in-out;
                                 }
                                 &:last-child {
                                     display: block;
@@ -1141,20 +1189,11 @@ main {
                                     height: 3px;
                                     background: #212529;
                                     transform: rotate(90deg);
-                                    transition: all 0.5s ease-in-out;
+                                    transition: all 0.35s ease-in-out;
                                 }
                             }
                         }
-                        .plus.activeFaq {
-                            span {
-                                &:first-child {
-                                    transform: rotate(135deg);
-                                }
-                                &:last-child {
-                                    transform: rotate(270deg);
-                                }
-                            }
-                        }
+                        
                         h4 {
                             padding: 13px 30px;
                             width: 810px;
@@ -1173,18 +1212,48 @@ main {
                         }
                     }
                     .faq-detail {
-                        display: none;
-                        margin-top: 20px;
+                        position: absolute;
+                        opacity: 0;
+                        margin: 30px 30px 0 30px;
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 28px;
                         color: #676767;
-                        transition: 0.4s;
+                        transition: margin-top 0.35s ease-in-out;
                     }
-                    .activeFaq {
+                }
+                .quest-answ--active {
+                    .accordion-trigger {
+                        background: #00730C;
+                        h4 {
+                            i {
+                                color: white;
+                            }
+                        }
+                        .plus {
+                            span {
+                                &:first-child {
+                                    background-color: white;
+                                    transform: rotate(-45deg);
+                                }
+                                &:last-child {
+                                    background-color: white;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                .quest-answ--active {
+
+                    .faq-detail {
                         display: block;
+                        position: unset;
+                        margin-top: 20px;
+                        opacity: 1;
                     }
                 }
             }
@@ -1194,10 +1263,11 @@ main {
             align-self: flex-start;
             width: 36%;
             height: 679px;
-            background: #C4C4C4;
+            // background: #C4C4C4;
             img {
-                width: 507px;
-                height: 679px;
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -1238,6 +1308,7 @@ main {
             height: fit-content;
             .slider-2-line {
                 display: flex;
+                justify-content: center;
                 gap: 30px;
                 [class*='slide-2-'] {
                     position: relative;
@@ -1246,6 +1317,18 @@ main {
                     background: #C4C4C4;
                     border-radius: 10px;
                     z-index: 20;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &:nth-child(1) {
+                        background-image: url(assets/backgrounds/instr.png);
+                    }
+                    &:nth-child(2) {
+                        background-image: url(assets/backgrounds/plant-with-hands.png);
+                    }
+                    &:nth-child(3) {
+                        background-image: url(assets/backgrounds/red-girl-stay.png);
+                    }
                     &::after {
                         content: "";
                         position: absolute;
@@ -1275,6 +1358,7 @@ main {
                     &:hover {
                         background-color: #FFFFFF;
                         box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                        background-image: none;
                         &::after {
                             background-image: url(assets/home-page-02/big-sheet.png);
                         }
@@ -1403,15 +1487,18 @@ footer {
     height: fit-content;
     .footer-imgs {
         display: flex;
+        justify-content: center;
         margin: 0 100px 170px 100px;
         gap: 100px;
         div {
             width: 202px;
             height: 100px;
-            background-color: #C4C4C4;
+            // background-color: #C4C4C4;
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
             }
         }
     }
@@ -1421,10 +1508,11 @@ footer {
         background-color: #0C4B35;
         .solutions {
             display: flex;
+            justify-content: space-between;
             position: absolute;
-            width: fit-content;
+            width: 73.438%;
             padding: 32px 100px;
-            margin: 0 255px;
+            margin: 0 13.3%;
             top: -70px;
             background: #D9F1E0;
             border-radius: 10px;
@@ -1438,7 +1526,6 @@ footer {
                 span {
                     color: #00730C;
                 }
-                margin-right: 270px;
             }
             button {
                 margin-top: 5px;
@@ -1446,9 +1533,184 @@ footer {
         }
         .main-block-footer {
             .main-inform-footer {
+                display: flex;
+                gap: 100px;
                 padding-top: 170px;
                 margin: 0 255px 50px 255px;
-
+                h5 {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 33px;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                }
+                p, a {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+                a {
+                    margin-bottom: 20px;
+                    &:nth-child(1) {
+                        margin-top: 80px;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .subscr {
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%;
+                    p {
+                        margin-top: 80px;
+                    }
+                    .subsc-email {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 45px;
+                        border-bottom: 1px solid white;
+                        .form-field {
+                            flex: 2;
+                            outline: 0;
+                            border: 0;
+                            background-color: transparent;
+                            font-family: 'Nunito';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: #FFFFFF;
+                            margin-bottom: 10px;
+                            &::placeholder {
+                                font-family: 'Nunito';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 25px;
+                                color: #FFFFFF;
+                            }
+                        }
+                        .submit-form-email {
+                            font-family: 'Nunito';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 33px;
+                            text-transform: capitalize;
+                            color: #FFFFFF;
+                            background-color: unset;
+                            border: 0;
+                        }
+                    }
+                    .links-social {
+                        display: flex;
+                        margin-top: 30px;
+                        gap: 30px;
+                        .fb {
+                            background-image: url(assets/home-page-02/facebook.png);
+                            width: 41px;
+                            height: 41px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            margin-top: 0;
+                        }
+                        .ld {
+                            background-image: url(assets/home-page-02/linkedin.png);
+                            width: 41px;
+                            height: 41px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        .gp {
+                            background-image: url(assets/home-page-02/Google.png);
+                            width: 41px;
+                            height: 41px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                        .tw {
+                            background-image: url(assets/home-page-02/twitter.png);
+                            width: 41px;
+                            height: 41px;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                }
+                .contacts {
+                    width: 18%;
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        margin-bottom: 20px;
+                        &:nth-child(2) {
+                            margin-top: 80px;
+                        }
+                        &:nth-child(3) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .useful-links {
+                    width: 20%;
+                    .container-useful-links {
+                        display: flex;
+                        justify-content: space-between;
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                    a {
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 8px;
+                            height: 12px;
+                            background-image: url(assets/home-page-02/footer-arrow.png);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            left: -15px;
+                            top: 8px;
+                        }
+                    }
+                }
+                .popular-services {
+                    width: 16%;
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        &:nth-child(2) {
+                            margin-top: 80px;
+                        } 
+                    }
+                }
+            }
+            .end-footer {
+                display: flex;
+                justify-content: space-between;
+                padding: 30px 360px 40px 360px;
+                border-top: 1px solid white;
+                p {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                }
+                .terms-privacy-map {
+                    display: flex;
+                    gap: 30px;
+                }
             }
         }
     }
@@ -1541,6 +1803,7 @@ footer {
         line-height: 24px;
         text-transform: capitalize;
         color: #FFFFFF;
+        cursor: pointer;
     }
     a {
         position: relative;
