@@ -1,3 +1,44 @@
+/////////////////////////////// - header contacts
+const activeTextEmailHeader = document.querySelector(
+  ".img-header-contacts-email"
+);
+const activeTextNumberHeader = document.querySelector(
+  ".img-header-contacts-number"
+);
+const activeTextLocationHeader = document.querySelector(
+  ".img-header-contacts-location"
+);
+const activeHeaderContactsElement = document.querySelectorAll(
+  ".element-header-text"
+);
+const activeEmail = document.querySelector("#header-contacts-1");
+const activeNumber = document.querySelector("#header-contacts-2");
+const activeLocation = document.querySelector("#header-contacts-3");
+
+activeTextEmailHeader.addEventListener("click", () => {
+  activeEmail.classList.toggle("activeBlock");
+});
+activeTextNumberHeader.addEventListener("click", () => {
+  activeNumber.classList.toggle("activeBlock");
+});
+activeTextLocationHeader.addEventListener("click", () => {
+  activeLocation.classList.toggle("activeBlock");
+});
+document.addEventListener("click", (e) => {
+  if (e.target !== activeTextEmailHeader) {
+    activeEmail.classList.remove("activeBlock");
+  }
+});
+document.addEventListener("click", (e) => {
+  if (e.target !== activeTextLocationHeader) {
+    activeLocation.classList.remove("activeBlock");
+  }
+});
+document.addEventListener("click", (e) => {
+  if (e.target !== activeTextNumberHeader) {
+    activeNumber.classList.remove("activeBlock");
+  }
+});
 ////////////////////////////// - Change lang
 document.querySelectorAll(".change-lang").forEach((changeLang) => {
   const changeLangBtn = changeLang.querySelector(".change-lang-btn");
@@ -5,13 +46,20 @@ document.querySelectorAll(".change-lang").forEach((changeLang) => {
   const changeLangItem = changeLang.querySelectorAll(".change-lang-item");
   const changeLangInput = changeLang.querySelector(".change-lang-input");
 
-  changeLangBtn.addEventListener("click", () => {
+  const activeBtnLang = () => {
     changeLangBtn.classList.toggle("active");
     changeLangList.classList.toggle("active");
+  };
+  const hideBtnLang = () => {
+    changeLangBtn.classList.remove("active");
+    changeLangList.classList.remove("active");
+  };
+
+  changeLangBtn.addEventListener("click", () => {
+    activeBtnLang();
   });
 
   changeLangItem.forEach((item) => {
-    console.log(item);
     item.addEventListener("click", (e) => {
       e.stopPropagation();
       let swapText = changeLangBtn.innerText;
@@ -19,15 +67,13 @@ document.querySelectorAll(".change-lang").forEach((changeLang) => {
       item.innerText = swapText;
       changeLangInput.value = item.dataset.value;
       item.dataset.value = swapText;
-      changeLangBtn.classList.remove("active");
-      changeLangList.classList.remove("active");
+      hideBtnLang();
     });
   });
 
   document.addEventListener("click", (e) => {
     if (e.target !== changeLangBtn) {
-      changeLangBtn.classList.remove("active");
-      changeLangList.classList.remove("active");
+      hideBtnLang();
     }
   });
 });
@@ -99,4 +145,19 @@ triggerAccordion.forEach((item) => {
   item.addEventListener("click", () => {
     item.parentNode.classList.toggle("quest-answ--active");
   });
+});
+////////////////////////////////// - hb-menu
+const hbMenu = document.querySelector(".hb-menu");
+const menu = document.querySelector(".menu");
+
+hbMenu.addEventListener("click", () => {
+  menu.classList.toggle("activeMenu");
+});
+// articles and insights
+const noHoverArcIns = document.querySelectorAll(".container-for-shadow");
+
+noHoverArcIns.forEach((item) => {
+  if (window.innerWidth < 500) {
+    item.classList.remove(":hover");
+  }
 });

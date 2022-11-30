@@ -1,0 +1,42 @@
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin fontNameOfTitle() {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 800;
+    font-size: calc((1vw + 1vh) * 1.5);
+    line-height: calc((1vw + 1vh) * 2);
+}
+@mixin fontParagraphPoppins() {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc((1vw + 1vh) * 0.53);
+    line-height: calc((1vw + 1vh) * 0.9);
+}
+@mixin fontParagraphNunito() {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc((1vw + 1vh) * 0.6);
+    line-height: calc((1vw + 1vh) * 0.9);
+}
+@mixin fontForFunctionsNunito() {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((1vw + 1vh) * 0.8);
+    line-height: calc((1vw + 1vh) * 1.1);
+}
+@mixin fontForFunctionsMenu() {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #212529;
+}
