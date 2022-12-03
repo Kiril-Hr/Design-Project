@@ -149,15 +149,42 @@ triggerAccordion.forEach((item) => {
 ////////////////////////////////// - hb-menu
 const hbMenu = document.querySelector(".hb-menu");
 const menu = document.querySelector(".menu");
+const informMenu = document.querySelector(".inform");
+const containerLogMenu = document.querySelector(".container-logo-menu");
+const submenu = document.querySelectorAll(".submenu");
+// const containerScrollMobileMenu = document.querySelector(
+//   ".container-scroll-mobile-menu"
+// );
 
 hbMenu.addEventListener("click", () => {
   menu.classList.toggle("activeMenu");
+  hbMenu.classList.toggle("activeMenu");
+  // containerScrollMobileMenu.classList.toggle("activeMenu");
+  if (window.innerWidth < 768) {
+    informMenu.classList.toggle("activeMenu");
+    containerLogMenu.classList.toggle("activeMenu");
+    document.body.classList.toggle("lock");
+  }
+});
+submenu.forEach((item) => {
+  if (window.innerWidth < 500) {
+    item.classList.remove("hoverMenu");
+    item.addEventListener("click", () => {
+      item.classList.toggle("activeMenuItem");
+    });
+  }
+});
+document.addEventListener("click", (e) => {
+  if (e.target !== menu && e.target !== hbMenu && window.innerWidth > 767) {
+    menu.classList.remove("activeMenu");
+    hbMenu.classList.remove("activeMenu");
+  }
 });
 // articles and insights
 const noHoverArcIns = document.querySelectorAll(".container-for-shadow");
 
 noHoverArcIns.forEach((item) => {
   if (window.innerWidth < 500) {
-    item.classList.remove(":hover");
+    item.classList.remove("hover");
   }
 });
