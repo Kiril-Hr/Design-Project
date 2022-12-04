@@ -165,10 +165,10 @@ header {
                     .submenu.activeMenuItem {
                         p {
                             transform: rotate(180deg);
-                            opacity: 1;
+                            opacity: 1!important;
                         }
                         > a {
-                            color: white;
+                            color: white!important;
                         }
                         [class*='submenu-'] {
                             margin: 0 0 10px 35px;
@@ -189,17 +189,15 @@ header {
                     }
                     .hoverMenu { 
                         &:hover.submenu {
-                            [class*='submenu-'] {
+                            p {
+                                background-image: url(assets/home-page-02/menu-arrow-green.png);
+                            }
+                            > [class*='submenu-'] {
                                 display: flex;
                             }
                         }
                         .submenu > li:hover > a {
                             color: #00730C;
-                        }
-                        &:hover.submenu  {
-                            p {
-                                background-image: url(assets/home-page-02/menu-arrow-green.png);
-                            }
                         }
                     }
                     .submenu {
@@ -241,7 +239,7 @@ header {
                         z-index: 30;
                         li {
                             width: 115px;
-                            margin-top: 10px;
+                            margin-top: 15px;
                         }
                         [class*='sub-submenu'] {
                             position: relative;
@@ -253,7 +251,7 @@ header {
                             [class*="sub-submenu-"] {
                                 cursor: pointer;
                                 position: absolute;
-                                top: -10px;
+                                top: -15px;
                                 left: 70px;
                                 display: none;
                                 & > li:hover > a {
@@ -377,6 +375,15 @@ body.lock {
 }
 @media(max-width: 1700px) {
     header {
+        .container-logo-menu {  
+            .container-menu-btn {
+                .container-scroll-mobile-menu {
+                    .menu {
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
         .container-big-inform {
             .aside-img {
                 display: none;
@@ -398,18 +405,21 @@ body.lock {
 }
 @media(max-width: 1600px) {
     header {
-        .container-logo-menu {
+        .container-logo-menu {  
             .container-menu-btn {
-                .menu {
-                    ul {
-                        &:last-child {
-                            margin-right: 40px;
-                        }
-                        .submenu {
-                            margin-right: 40px;
+                .container-scroll-mobile-menu {
+                    .menu {
+                        ul {
+                            &:last-child {
+                                margin-right: 40px;
+                            }
+                            .submenu {
+                                margin-right: 40px;
+                            }
                         }
                     }
                 }
+                
             }
         }
     }
@@ -477,6 +487,18 @@ body.lock {
                             }
                             &:nth-child(3) {
                                 display: block;
+                            }
+                            .submenu-2 {
+                                left: 0;
+                                max-height: 150px;
+                                width: fit-content;
+                                flex-direction: column;
+                                flex-wrap: wrap;
+                                > li {
+                                    width: 115px;
+                                    margin-top: 0;
+                                    padding: 10px 10px 10px 0;
+                                }
                             }
                         }
                     }
@@ -592,6 +614,9 @@ body.lock {
                             }
                             .submenu {
                                 margin-right: 0;
+                                .submenu-2 {
+                                    max-height: unset;
+                                }
                                 &:nth-child(1) {
                                     p {
                                         display: none;
