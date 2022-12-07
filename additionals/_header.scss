@@ -509,10 +509,27 @@ body.lock {
 }
 @media(max-width: 840px) {
     header {
+        .container-logo-menu {
+            .container-menu-btn {
+                .container-scroll-mobile-menu {
+                    .menu {
+                        margin-right: 10px;
+                        ul {
+                            .submenu {
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .inform {
             padding: 0 80px;
         }
     }
+}
+@media(max-width: 768px) {
+    
 }
 
 // mobile 
