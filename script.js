@@ -91,6 +91,7 @@ const menu = document.querySelector(".menu");
 const informMenu = document.querySelector(".inform");
 const containerLogMenu = document.querySelector(".container-logo-menu");
 const submenu = document.querySelectorAll(".submenu");
+const logo = document.querySelector(".logo");
 // const containerScrollMobileMenu = document.querySelector(
 //   ".container-scroll-mobile-menu"
 // );
@@ -99,14 +100,17 @@ hbMenu.addEventListener("click", () => {
   menu.classList.toggle("activeMenu");
   hbMenu.classList.toggle("activeMenu");
   // containerScrollMobileMenu.classList.toggle("activeMenu");
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 768 && window.innerWidth > 660) {
     informMenu.classList.toggle("activeMenu");
     containerLogMenu.classList.toggle("activeMenu");
+  } else if (window.innerWidth <= 660 && window.innerWidth > 500) {
+    logo.classList.toggle("deactivate-logo");
+  } else if (window.innerWidth <= 500) {
     document.body.classList.toggle("lock");
   }
 });
 submenu.forEach((item) => {
-  if (window.innerWidth < 500) {
+  if (window.innerWidth <= 500) {
     item.classList.remove("hoverMenu");
     item.addEventListener("click", () => {
       item.classList.toggle("activeMenuItem");
@@ -194,7 +198,7 @@ btnPrev.addEventListener("click", () => {
 
 // slider train
 
-if (window.innerWidth < 768) {
+if (window.innerWidth <= 500) {
   new Swiper(".slider-train", {
     pagination: {
       el: ".slider-switchers",

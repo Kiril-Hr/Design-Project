@@ -376,6 +376,10 @@ body.lock {
   display: block !important;
 }
 
+.deactivate-logo {
+  opacity: 0;
+}
+
 @media (max-width: 1700px) {
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
     margin-right: 50px;
@@ -472,7 +476,39 @@ body.lock {
     padding: 0 80px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767px) {
+  header .container-logo-menu {
+    padding: 0 15px;
+  }
+  header .inform {
+    padding: 0 40px;
+  }
+  header .inform .container-inform > div {
+    margin-right: 15px;
+  }
+  header .inform .change-lang .change-lang-list {
+    left: -200px;
+    height: 40px;
+    background-color: #0C4B35;
+  }
+  header .inform .change-lang .change-lang-list .change-lang-item {
+    padding: 5px;
+  }
+  header .inform .change-lang .change-lang-btn::after {
+    top: 10px;
+  }
+}
+@media (max-width: 660px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu {
+    margin-right: 45px;
+  }
+}
+@media (max-width: 560px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 500px) {
   header {
     margin-top: 123px !important;
   }
@@ -568,25 +604,25 @@ header .inform .container-inform > div .img-header-contacts-location {
     display: none;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2) p {
-    right: 256px;
+    right: 75%;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(3) {
+    display: none;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4) p {
-    right: 264px;
+    right: 77%;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5) {
     display: block;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5) p {
-    right: 274px;
+    right: 80.5%;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6) {
     display: block;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6) p {
-    right: 292px;
-  }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(3) {
-    display: none;
+    right: 84.5%;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu p {
     top: 13px;
@@ -621,6 +657,20 @@ header .inform .container-inform > div .img-header-contacts-location {
     width: 20px;
     height: 20px;
     background-size: cover;
+  }
+}
+@media (max-width: 375px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2) p {
+    right: 256px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4) p {
+    right: 264px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5) p {
+    right: 274px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6) p {
+    right: 292px;
   }
 }
 footer {
@@ -857,13 +907,17 @@ footer .bottom-of-footer .main-block-footer .end-footer {
   padding: 30px 360px 40px 360px;
   border-top: 1px solid white;
 }
-footer .bottom-of-footer .main-block-footer .end-footer p {
+footer .bottom-of-footer .main-block-footer .end-footer p, footer .bottom-of-footer .main-block-footer .end-footer a {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: calc((1vw + 1vh) * 0.6);
   line-height: calc((1vw + 1vh) * 0.9);
+  text-decoration: none;
   color: #FFFFFF;
+}
+footer .bottom-of-footer .main-block-footer .end-footer a:hover {
+  text-decoration: underline;
 }
 footer .bottom-of-footer .main-block-footer .end-footer .terms-privacy-map {
   display: flex;
@@ -982,6 +1036,15 @@ footer .bottom-of-footer .main-block-footer .end-footer .terms-privacy-map {
   footer .bottom-of-footer .main-block-footer .main-inform-footer {
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 120px;
+  }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer h5 {
+    font-size: calc((1vw + 1vh) * 1);
+    line-height: calc((1vw + 1vh) * 1.3);
+  }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer p, footer .bottom-of-footer .main-block-footer .main-inform-footer a {
+    font-size: calc((1vw + 1vh) * 0.8);
+    line-height: calc((1vw + 1vh) * 1.1);
   }
   footer .bottom-of-footer .main-block-footer .main-inform-footer .subscr,
 footer .bottom-of-footer .main-block-footer .main-inform-footer .contacts,
@@ -1019,6 +1082,15 @@ footer .bottom-of-footer .main-block-footer .main-inform-footer .popular-service
   footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links {
     text-align: center;
   }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links h5 {
+    margin-right: 17px;
+  }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links a {
+    align-self: flex-start;
+  }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links a:nth-child(2) {
+    margin-top: 0;
+  }
   footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links .container-useful-links {
     justify-content: center;
   }
@@ -1030,11 +1102,13 @@ footer .bottom-of-footer .main-block-footer .main-inform-footer .popular-service
   footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links .container-useful-links div:first-child {
     margin-right: 45px;
   }
-  footer .bottom-of-footer .main-block-footer .main-inform-footer .contacts {
-    align-items: center;
-  }
   footer .bottom-of-footer .main-block-footer .main-inform-footer .popular-services {
-    align-items: center;
+    width: 20%;
+    align-items: flex-end;
+  }
+  footer .bottom-of-footer .main-block-footer .end-footer p, footer .bottom-of-footer .main-block-footer .end-footer a {
+    font-size: calc((1vw + 1vh) * 0.8);
+    line-height: calc((1vw + 1vh) * 1.1);
   }
 }
 @media (max-width: 860px) {
@@ -1050,8 +1124,33 @@ footer .bottom-of-footer .main-block-footer .main-inform-footer .popular-service
     text-align: center;
     margin: 0 0 25px 0;
   }
+  footer .bottom-of-footer .main-block-footer .end-footer .terms-privacy-map {
+    gap: 10px;
+  }
 }
-@media (max-width: 375px) {
+@media (max-width: 560px) {
+  footer .bottom-of-footer .main-block-footer .main-inform-footer {
+    gap: 20px;
+  }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer .contacts,
+footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links {
+    width: 30%;
+  }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer .popular-services {
+    width: 23%;
+  }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links a::after {
+    width: 5px;
+    height: 9px;
+    background-size: contain;
+    top: 1px;
+    left: -10px;
+  }
+  footer .bottom-of-footer .main-block-footer .main-inform-footer .useful-links .container-useful-links div:first-child {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 500px) {
   footer .img-mobile {
     display: flex;
     justify-content: center;
@@ -1751,7 +1850,7 @@ main .img-propose-to-call .container-propose .img-propose {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: calc((1vw + 1vh) * 46.7);
+  width: calc((1vh + 1vw) * 46.7);
   height: 247px;
   background-image: url(assets/backgrounds/worker-take-care-flowerpoots-girl-white-shirt-woman-gloves.png);
   background-position: center;
@@ -2720,8 +2819,8 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     margin-top: 120px;
   }
   main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
-    font-size: calc((1vw + 1vh) * 1.3);
-    line-height: calc((1vw + 1vh) * 1.7);
+    font-size: calc((1vh + 1vw) * 1.3);
+    line-height: calc((1vh + 1vw) * 1.7);
   }
   main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
     bottom: -12%;
@@ -2729,7 +2828,7 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
 }
 @media (max-width: 1400px) {
   main .img-propose-to-call .container-propose .img-propose {
-    width: calc((1vw + 1vh) * 39.5);
+    width: calc((1vh + 1vw) * 39.5);
   }
   main .insights-articles {
     margin-top: 50px;
@@ -2752,8 +2851,8 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     margin-bottom: 0;
   }
   main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
-    font-size: calc((1vw + 1vh) * 1.3);
-    line-height: calc((1vw + 1vh) * 1.7);
+    font-size: calc((1vh + 1vw) * 1.3);
+    line-height: calc((1vh + 1vw) * 1.7);
   }
   main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
     bottom: 2%;
@@ -2771,15 +2870,13 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
   }
 }
 @media (max-width: 1240px) {
-  main .trained-staff .descrb-btn-train-staff {
-    flex-direction: column;
+  main .services h3 {
+    font-size: 45px;
+    line-height: 61px;
   }
-  main .trained-staff .descrb-btn-train-staff .descrb-train {
-    text-align: center;
-    width: 100%;
-  }
-  main .trained-staff .descrb-btn-train-staff .btn-more {
-    align-self: center !important;
+  main .services p {
+    font-size: 18px;
+    line-height: 30px;
   }
   main .time-of-companys-existence-container .time-of-companys-existence {
     flex-direction: column;
@@ -2795,6 +2892,14 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     flex-direction: column;
     align-items: center;
     margin: 60px 0 0 0;
+  }
+  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf p {
+    font-size: 16px;
+    line-height: 28px;
   }
   main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions {
     margin-top: 40px;
@@ -2844,6 +2949,72 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     height: 386px;
     max-height: unset;
   }
+  main .why-choose-us .container-choose-us:first-child h3 {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  main .why-choose-us .container-choose-us:first-child p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .working-process .descr-work-proc h3 {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  main .working-process .descr-work-proc p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .trained-staff .descrb-btn-train-staff {
+    flex-direction: column;
+  }
+  main .trained-staff .descrb-btn-train-staff .descrb-train {
+    text-align: center;
+    width: 100%;
+  }
+  main .trained-staff .descrb-btn-train-staff .descrb-train h3 {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  main .trained-staff .descrb-btn-train-staff .descrb-train p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .trained-staff .descrb-btn-train-staff .btn-more {
+    align-self: center !important;
+  }
+  main .customer-feedback .cust-feedb-descr-btn .cust-feedb-descr h3 {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  main .customer-feedback .cust-feedb-descr-btn .cust-feedb-descr p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .faq .faq-details .title-decrb-faq h3 {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  main .faq .faq-details .title-decrb-faq p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .faq .faq-details .faq-descrb .quest-answ .accordion-trigger h4 i {
+    font-size: 20px;
+    line-height: 29px;
+  }
+  main .faq .faq-details .faq-descrb .quest-answ .faq-detail {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  main .insights-articles .descp-our-artcs-ingts h3 {
+    font-size: 45px;
+    line-height: 61px;
+  }
+  main .insights-articles .descp-our-artcs-ingts p {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 @media (max-width: 1199px) {
   main .insights-articles .slider-2 {
@@ -2864,7 +3035,7 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
 @media (max-width: 1100px) {
   main .time-of-companys-existence-container .time-of-companys-existence .images {
     justify-content: unset;
-    margin-left: 15%;
+    margin-left: 13%;
   }
   main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
     width: 50%;
@@ -2875,13 +3046,16 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     bottom: -30%;
   }
   main .faq {
-    margin-top: 100px;
+    margin-top: 200px;
   }
   main .faq .faq-details {
     width: 100%;
   }
   main .faq .img-faq {
     display: none;
+  }
+  main .insights-articles {
+    margin-top: -50px;
   }
 }
 @media (max-width: 960px) {
@@ -2890,6 +3064,10 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
   }
   main .working-process .blocks-work-proc [class*=block-work-proc-] {
     width: 280px;
+  }
+  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div a {
+    font-size: 14px;
+    line-height: 19px;
   }
   main .time-of-companys-existence-container .time-of-companys-existence .images {
     justify-content: unset;
@@ -2908,14 +3086,17 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     height: 386px;
     max-height: unset;
   }
+  main .customer-feedback .cust-feedb-descr-btn .btns-slider {
+    display: none;
+  }
+  main .customer-feedback .cust-feedb-descr-btn .cust-feedb-descr {
+    width: 100%;
+  }
   main .insights-articles {
     margin-bottom: 50px;
   }
 }
 @media (max-width: 840px) {
-  main .img-propose-to-call .container-propose .img-propose {
-    width: calc((1vw + 1vh) * 35);
-  }
   main .time-of-companys-existence-container .time-of-companys-existence .images {
     justify-content: unset;
     margin-left: 0;
@@ -2941,8 +3122,11 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
   main .time-of-companys-existence-container .time-of-companys-existence {
     margin: 100px 60px 60px 60px;
   }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: -10%;
+  main .why-choose-us .container-image-choose-us {
+    padding: 100px 50px 0px 50px;
+  }
+  main .why-choose-us .container-choose-us {
+    padding: 40px 50px;
   }
   main .insights-articles {
     margin: 150px 60px 0 60px;
@@ -2963,24 +3147,27 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     margin: 100px 60px;
   }
   main .trained-staff .slider-train-container {
-    width: 500px;
+    width: 100%;
   }
   main .trained-staff .slider-train-container .slider-train {
     width: 100%;
     max-width: 100%;
-    max-height: 100vh;
     min-height: 0;
     min-width: 0;
   }
-  main .trained-staff .slider-train-container .slider-train .blocks-train-staff {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    flex-wrap: unset;
-    gap: unset;
-  }
   main .working-process {
     margin: 100px 60px;
+  }
+  main .img-propose-to-call .container-propose .img-propose {
+    width: calc((1vh + 1vw) * 45);
+  }
+  main .img-propose-to-call .container-propose .img-propose h4 {
+    font-size: 27px;
+    line-height: 39px;
+    margin-right: 20px;
+  }
+  main .img-propose-to-call .container-propose .img-propose button {
+    margin-right: 20px;
   }
   main .services {
     margin: 0 60px;
@@ -2996,19 +3183,6 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
   main .customer-feedback .cust-feedb-descr-btn .cust-feedb-descr {
     width: 100%;
     text-align: center;
-    margin-bottom: 25px;
-  }
-  main .customer-feedback .cust-feedb-descr-btn .cust-feedb-descr h3 {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-  }
-  main .customer-feedback .cust-feedb-descr-btn .cust-feedb-descr p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  main .customer-feedback .cust-feedb-descr-btn .btns-slider {
-    display: none;
   }
   main .customer-feedback .container-slider {
     width: 375px;
@@ -3056,8 +3230,37 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
   main .customer-feedback .container-slider .slider-1 .slider-line .slide .container-details-slide .inform-slide .name-rating .rating {
     top: 10px;
   }
+  main .img-propose-to-call .container-propose .img-propose h4 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    margin-right: 20px;
+  }
+  main .img-propose-to-call .container-propose .btn-call-us button {
+    margin-right: 20px;
+  }
 }
-@media (max-width: 375px) {
+@media (max-width: 660px) {
+  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
+    width: 80%;
+  }
+  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
+    width: 50%;
+    left: 50%;
+  }
+  main .insights-articles .slider-2 {
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  header .container-big-inform .big-inform .container-that-was-done > div {
+    margin-right: 10px;
+  }
+  main .faq {
+    margin-top: 200px;
+  }
+}
+@media (max-width: 500px) {
   .btn-more button {
     width: 167px;
     height: 40px;
@@ -3234,6 +3437,7 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     left: 100px;
   }
   main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
+    text-align: center;
     font-weight: 700;
     font-size: 28px;
     line-height: 38px;
@@ -3283,6 +3487,7 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     line-height: 22px;
   }
   main .why-choose-us .container-choose-us .given-functs {
+    justify-content: center;
     gap: 20px 30px;
   }
   main .why-choose-us .container-choose-us .given-functs [class*=func-] {
@@ -3372,7 +3577,7 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     width: unset;
   }
   main .img-propose-to-call .container-propose {
-    width: 345px;
+    width: 100%;
     height: 224px;
     margin: 0;
   }
@@ -3425,6 +3630,7 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
   }
   main .trained-staff .slider-train-container {
     width: 345px;
+    margin: 0 auto;
     overflow: hidden;
   }
   main .trained-staff .slider-train-container .slider-train {
@@ -3433,12 +3639,13 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     width: fit-content;
   }
   main .trained-staff .slider-train-container .slider-train .blocks-train-staff {
+    flex-wrap: unset;
+    gap: unset;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     position: relative;
     overflow: hidden;
-    flex-wrap: nowrap;
   }
   main .trained-staff .slider-train-container .slider-train .blocks-train-staff [class*=block-personal] {
     max-width: unset;
@@ -3459,9 +3666,16 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     display: flex;
     width: 100% !important;
   }
-  main .customer-feedback .container-slider {
-    position: absolute;
-    left: 0;
+  main .customer-feedback .cust-feedb-descr-btn .cust-feedb-descr h3 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 15px;
+  }
+  main .customer-feedback .cust-feedb-descr-btn .cust-feedb-descr p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
   }
   main .faq {
     margin: 160px 15px 0 15px;
@@ -3495,7 +3709,7 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     line-height: 22px;
   }
   main .faq .faq-details .faq-descrb .quest-answ .accordion-trigger {
-    width: 345px;
+    width: 100%;
     height: 44px;
   }
   main .faq .faq-details .faq-descrb .quest-answ .accordion-trigger h4 {
@@ -3621,5 +3835,11 @@ main .insights-articles .slider-2 .swiper-pagination-bullet {
     line-height: 19px;
     color: #676767;
     text-decoration: none;
+  }
+}
+@media (max-width: 390px) {
+  main .customer-feedback .container-slider {
+    position: absolute;
+    left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

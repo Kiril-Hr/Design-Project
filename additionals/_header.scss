@@ -373,6 +373,9 @@ body.lock {
 .activeMenu {
     display: block!important;
 }
+.deactivate-logo {
+    opacity: 0;
+}
 @media(max-width: 1700px) {
     header {
         .container-logo-menu {  
@@ -528,12 +531,73 @@ body.lock {
         }
     }
 }
-@media(max-width: 768px) {
-    
+@media(max-width: 767px) {
+    header {
+        .container-logo-menu {
+            padding: 0 15px;
+        }
+        .inform {
+            padding: 0 40px;
+            .container-inform {
+                > div {
+                    margin-right: 15px;
+                }
+            }
+            .change-lang {
+                .change-lang-list {
+                    .change-lang-item {
+                        padding: 5px;
+                    }
+                    left: -200px;
+                    height: 40px;
+                    background-color: #0C4B35;
+                }
+                .change-lang-btn {
+                    &::after {
+                        top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 660px) {
+    header {
+        .container-logo-menu {
+            .container-menu-btn {
+                .container-scroll-mobile-menu {
+                    .menu {
+                        ul {
+                            .submenu {
+                                margin-right: 45px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }     
+}
+@media(max-width: 560px) {
+    header {
+        .container-logo-menu {
+            .container-menu-btn {
+                .container-scroll-mobile-menu {
+                    .menu {
+                        ul {
+                            .submenu {
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 // mobile 
-@media(max-width: 375px) {
+@media(max-width: 500px) {
     header {
         margin-top: 123px!important;
         .inform {
@@ -641,32 +705,30 @@ body.lock {
                                 }
                                 &:nth-child(2) {
                                     p {
-                                        right: 256px;
+                                        right: 75%;
                                     }
+                                }
+                                &:nth-child(3) {
+                                    display: none;
                                 }
                                 &:nth-child(4) {
                                     p {
-                                        right: 264px;
-    
+                                        right: 77%;
                                     }
                                 }
                                 &:nth-child(5) {
                                     p {
-                                        right: 274px;
-    
+                                        right: 80.5%;
                                     }
                                     display: block;
                                 }
                                 &:nth-child(6) {
                                     p {
-                                        right: 292px;
-    
+                                        right: 84.5%;
                                     }
                                     display: block;
                                 }
-                                &:nth-child(3) {
-                                    display: none;
-                                }
+                                
                                 p {
                                     top: 13px;
                                     opacity: 0.7;
@@ -702,6 +764,42 @@ body.lock {
                             width: 20px;
                             height: 20px;
                             background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 375px) {
+    header {
+        .container-logo-menu {
+            .container-menu-btn {
+                .container-scroll-mobile-menu {
+                    .menu {
+                        ul {
+                            .submenu {
+                                &:nth-child(2) {
+                                    p {
+                                        right: 256px;
+                                    }
+                                }
+                                &:nth-child(4) {
+                                    p {
+                                        right: 264px;
+                                    }
+                                }
+                                &:nth-child(5) {
+                                    p {
+                                        right: 274px;
+                                    }
+                                }
+                                &:nth-child(6) {
+                                    p {
+                                        right: 292px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
