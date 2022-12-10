@@ -742,8 +742,7 @@ body.lock {
                     top: 123px;
                     .menu {
                         position: relative;
-                        height: 100%;
-                        padding: 25px 15px;
+                        padding: 25px 15px 20px 15px;
                         margin-bottom: 123px;
                         background: #0C4B35;
                         z-index: 0;
@@ -751,23 +750,46 @@ body.lock {
                         margin-right: 0;
                         .contacts-links-mobile-menu {
                             position: relative;
-                            display: block;
-                            margin: 85px 0 20px 0;
-                            div {
-                                &:nth-child(1) {
-                                    div {
-                                        position: absolute;
-                                        width: 20px;
-                                        height: 20px;
-                                    }
+                            display: flex;
+                            flex-direction: column;
+                            margin-top: 125px;
+                            .links-mobile {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                a {
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    width: 20px;
+                                    height: 20px;
+                                    text-decoration: none;
+                                    margin: 0 20px 20px 0;
                                 }
-                                &:nth-child(2) {
+                                .fb-mobile-menu {
+                                    background-image: url(../assets/home-page-02/facebook-hm-mobile.svg);
+                                }
+                                .in-mobile-menu {
+                                    background-image: url(../assets/home-page-02/linkedin-hm-mobile.svg);
+                                }
+                                .gplus-mobile-menu {
+                                    background-image: url(../assets/home-page-02/Google-hm-mobile.svg);
+                                    margin-top: 2px;
+                                }
+                                .tw-mobile-menu {
+                                    background-image: url(../assets/home-page-02/twitter-hm-mobile.svg);
+                                    margin-top: 2px;
+                                }
+                            }
+                            div {
+                                &:last-child {
+                                    position: relative;
                                     font-family: 'Nunito';
                                     font-style: normal;
-                                    font-weight: 300;
-                                    font-size: 12px;
+                                    font-weight: 400;
+                                    font-size: 10px;
                                     line-height: 14px;
                                     text-align: center;
+                                    opacity: 0.9;
                                     color: #FFFFFF;
                                 }
                             }
