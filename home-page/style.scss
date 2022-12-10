@@ -1,0 +1,148 @@
+@import '../additionals/fonts';
+@import '../additionals/mixins';
+@import '../additionals/variable';
+@import '../additionals/header';
+@import '../additionals/container-that-was-done';
+@import '../additionals/main-body';
+@import '../additionals/footer';
+@import '../additionals/services';
+@import '../additionals/time-companys-ex';
+@import '../additionals/why-choose-us';
+@import '../additionals/working-process';
+@import '../additionals/img-propose-to-call';
+@import '../additionals/trained-staff';
+@import '../additionals/customer-feedback';
+@import '../additionals/faq';
+@import '../additionals/insights-articles';
+
+header {
+    .container-big-inform {
+        width: 100%;
+        height: fit-content;
+        background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.7) -39.14%, rgba(251, 246, 238, 0.2) 70.23%);
+        display: flex;
+        justify-content: space-between;
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .aside-img {
+            align-self: flex-end;
+            position: relative;
+            width: 197px;
+            height: 278px;
+            bottom: 60px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+        }   
+        .aside-img-right {
+            margin-top: 46px;
+            border-top-left-radius: 10%;
+            background: #C4C4C4;
+            height: 673px;
+            img {
+                border-top-left-radius: 10%;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .big-inform {
+            margin: 133px 0 100px 60px;
+            h4 {
+                position: relative;
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: capitalize;
+                color: #212529;
+                margin-left: 29px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../assets/home-page-02/mini-branch-logo.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 24px;
+                    height: 20px;
+                    left: -29px;
+                }
+            }
+            h2 {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 58px;
+                line-height: 79px;
+                color: #212529;
+                margin-bottom: 20px;
+                span {
+                    color: #00730C;
+                }
+            }
+            > p {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: #676767;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+@media(max-width: 1260px) {
+    header {
+        .container-big-inform {
+            background: linear-gradient(355deg, rgba(0, 115, 12, 0.7) -1.14%, rgba(251, 246, 238, 0.2) 99.23%);
+            .aside-img-right {
+                display: none;
+            }
+        }
+    } 
+}
+
+// mobile
+
+@media(max-width: 500px) {
+    header {
+        .container-big-inform {
+            flex-direction: column-reverse;
+            background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+            .big-inform {
+                margin: 50px 15px 35px 15px;
+                h4 {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                h2 {
+                    font-size: 28px;
+                    line-height: 38px;  
+                    margin: 10px 0 15px 0;
+                }
+                > p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+            div {
+                .aside-img-right {
+                    display: block;
+                    margin-top: 0;
+                    border-radius: 0;
+                    width: 100%;
+                    height: 240px;
+                    img {
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}

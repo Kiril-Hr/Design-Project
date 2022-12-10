@@ -1,0 +1,16 @@
+body {
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --swiper-theme-color: #00730C;
+    --swiper-pagination-bullet-inactive-color: #FBEEE7;
+    --swiper-pagination-bullet-inactive-opacity: #00730C;
+}
+main {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 0;
+}

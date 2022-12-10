@@ -128,17 +128,17 @@ footer {
                             background-repeat: no-repeat;
                         }
                         .fb {
-                            background-image: url(assets/home-page-02/facebook.png);
+                            background-image: url(../assets/home-page-02/facebook.png);
                             margin-top: 0;
                         }
                         .ld {
-                            background-image: url(assets/home-page-02/linkedin.png);
+                            background-image: url(../assets/home-page-02/linkedin.png);
                         }
                         .gp {
-                            background-image: url(assets/home-page-02/Google.png);
+                            background-image: url(../assets/home-page-02/Google.png);
                         }
                         .tw {
-                            background-image: url(assets/home-page-02/twitter.png);
+                            background-image: url(../assets/home-page-02/twitter.png);
                         }
                     }
                 }
@@ -173,7 +173,7 @@ footer {
                             position: absolute;
                             width: 8px;
                             height: 12px;
-                            background-image: url(assets/home-page-02/footer-arrow.png);
+                            background-image: url(../assets/home-page-02/footer-arrow.png);
                             background-position: center;
                             background-repeat: no-repeat;
                             left: -15px;
@@ -250,7 +250,7 @@ footer {
         &::after {
             content: "";
             position: absolute;
-            background-image: url(./assets/home-page-02/arrow-right-grey.png);
+            background-image: url(../assets/home-page-02/arrow-right-grey.png);
             width: 20px;
             height: 16px;
             top: 8px;

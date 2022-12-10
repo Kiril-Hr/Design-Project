@@ -1,0 +1,92 @@
+    .container-that-was-done {
+        display: flex;
+        margin-top: 56px;
+        > div {
+            display: flex;
+            margin-right: 30px;
+            p {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: capitalize;
+                color: #212529;
+                align-self: center;
+                margin-left: 10px;
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+        .field {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 7px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+            border-radius: 35px;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            color: #212529;
+        }
+    }
+@media(max-width: 560px) {
+    .container-that-was-done {
+        > div {
+            margin-right: 10px;
+        }
+    }
+}
+@media(max-width: 500px) {
+    .container-that-was-done {
+        justify-content: flex-end;
+        margin-top: 0;
+        p {
+            font-size: 10px;
+            line-height: 14px;
+        }
+        > div {
+            margin-right: 12px;
+            &:nth-child(1) {
+                width: 140px;
+            }
+            &:nth-child(2) {
+                width: 133px;
+            }
+            padding: 0 10px;
+            height: 32px;
+            background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+            border-radius: 32px;
+            .field {
+                padding: 0;
+                background: none;
+                font-size: 12px;
+                line-height: 16px;
+                width: unset;
+                height: unset;
+            }
+            p {
+                display: flex;
+                font-size: 10px;
+                line-height: 14px;
+                margin-left: 8px;
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:last-child {
+                    display: flex;
+                }
+            }
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
+

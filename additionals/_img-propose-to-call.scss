@@ -1,0 +1,131 @@
+main {
+    .img-propose-to-call {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .container-propose {
+            margin: 0 255px;
+            width: fit-content;
+            height: fit-content;
+            .img-propose {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: calc($size * 46.7);
+                height: 247px;
+                background-image: url(../assets/backgrounds/worker-take-care-flowerpoots-girl-white-shirt-woman-gloves.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 10px;
+                h4 {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 33px;
+                    line-height: 45px;
+                    color: #FFFFFF;
+                    margin-right: 85px;
+                }
+                button {
+                    margin-right: 60px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1400px) {
+    main {
+        .img-propose-to-call {
+            .container-propose {
+                .img-propose {
+                    width: calc($size * 39.5);
+                }
+            }
+        }
+    }
+}
+@media(max-width: 767px) {
+    main {
+        .img-propose-to-call {
+            .container-propose {
+                .img-propose {
+                    width: calc($size * 45);
+                    h4 {
+                        font-size: 27px;
+                        line-height: 39px;
+                        margin-right: 20px;
+                    }
+                    button {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 730px) {
+    main {
+        .img-propose-to-call {
+            .container-propose {
+                .img-propose {
+                    h4 {
+                        text-align: center;
+                        font-size: 24px;
+                        line-height: 36px;
+                        margin-right: 20px;
+                    }
+                }
+                .btn-call-us {
+                    button {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 500px) {
+    main {
+        .img-propose-to-call {
+            display: block;
+            margin: 0 15px;
+            width: unset;
+            .container-propose {
+                width: 100%;
+                height: 224px;
+                margin: 0;
+                .img-propose {
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 50px 40px;
+                    h4 {
+                        margin-right: 0;
+                        font-size: 20px;
+                        line-height: 27px;
+                        text-align: center;
+                    }
+                    button {
+                        width: 137px;
+                        height: 40px;
+                        margin-right: 0;
+                        padding: 10px 30px;
+
+                        i {
+                            font-size: 14px;
+                            line-height: 19px;
+                        }
+                        &::after {
+                            width: 20px;
+                            height: 18px;
+                            background-size: contain;
+                            left: 29px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

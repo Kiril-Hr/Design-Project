@@ -1,0 +1,419 @@
+@import '../additionals/fonts';
+@import '../additionals/mixins';
+@import '../additionals/variable';
+@import '../additionals/header';
+@import '../additionals/header-about-page';
+@import '../additionals/container-that-was-done';
+@import '../additionals/main-body';
+@import '../additionals/time-companys-ex';
+@import '../additionals/trained-staff';
+@import '../additionals/footer';
+
+main {
+    h1, h2 {
+        text-align: center;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 61px;
+        color: #212529;
+        margin-bottom: 50px;
+    }
+    h1 {
+        &:first-child {
+            margin-bottom: -50px;
+        }
+    }
+    h2 {
+        text-align: left;
+        font-weight: 700;
+    }
+    .descr-missions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 255px;
+        .goal {
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    div {
+        h2, p {
+            margin-bottom: 30px;
+        }
+        p {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #676767;
+            &:first-child {
+                margin-top: 30px;
+            }
+            &:last-child {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .our-skills {
+        margin: 100px 255px;
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 61px;
+            color: #212529;
+            margin-bottom: 30px;
+        }
+        > p {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #676767;
+        }
+        .skills-descr {
+            padding: 100px 0;
+            width: 45%;
+            .skill-bars {
+                p {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 30px;
+                    margin-bottom: 10px;
+                }
+                .skill-bar {
+                    margin-bottom: 23px;
+                    .bar {
+                        width: 100%;
+                        height: 20px;
+                        background: #FFFFFF;
+                        box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.18);
+                        border-radius: 21px;
+                        .filling-bar {
+                            position: relative;
+                            top: 2px;
+                            left: 2px;
+                            background: #00730C;
+                            border-radius: 8px;
+                            height: 16px;
+                            &::after {
+                                position: absolute;
+                                right: 0;
+                                top: -35px;
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 28px;
+                                color: #000000;
+                            }
+                        }
+                        .garden-care {
+                            width: 85%;
+                            &::after {
+                                content: "85%";
+                            }
+                        }
+                        .lawn-care {
+                            width: 75%;
+                            &::after {
+                                content: "75%";
+                            }
+                        }
+                        .tree-plantation {
+                            width: 80%;
+                            &::after {
+                                content: "80%";
+                            }
+                        }
+                        .pests-weeds-control {
+                            width: 90%;
+                            &::after {
+                                content: "90%";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .skills-img {
+            display: flex;
+            position: relative;
+            width: 45%;
+            div {
+                background-color: darkgreen;
+                top: 0;
+                right: 0;
+                width: 70%;
+                height: 92%;
+                position: absolute;
+                border-radius: 8px;
+            }
+            img {
+                align-self: flex-end;
+                position: relative;
+                height: 97%;
+                width: 96%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+    }
+    .trained-staff {
+        margin-bottom: 0;
+    }
+}
+.container-that-was-done {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+        margin-bottom: 10px;
+        > p {
+            margin-bottom: 0;
+        }
+    }
+}
+@media(max-width: 1470px) {
+    main {
+        .time-of-companys-existence-container {
+            .time-of-companys-existence {
+                .images {
+                    .img-compn-exstnc-2 {
+                        bottom: 33%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1460px) {
+    main {
+        .descr-missions {
+            margin: 100px 115px 0 115px;
+        }
+        .our-skills {
+            margin: 0 115px;
+            .skills-img {
+                width: 50%;
+            }
+        }
+        .time-of-companys-existence-container {
+            .time-of-companys-existence {
+                .images {
+                    .img-compn-exstnc-2 {
+                        bottom: 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    main {
+        .time-of-companys-existence-container {
+            .time-of-companys-existence {
+                .images {
+                    .img-compn-exstnc-2 {
+                        bottom: 13%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1240px) {
+    .container-that-was-done {
+        margin-top: 30px;
+    }
+    main {
+        div {
+            p:last-child {
+                margin-bottom: 30px;
+            }
+        }
+        .time-of-companys-existence-container {
+            .time-of-companys-existence {
+                .images {
+                    .img-compn-exstnc-2 {
+                        bottom: -15%;
+                    }
+                }
+            }
+        }
+        .our-skills {
+            .skills-descr {
+                width: 100%;
+            }
+            .skills-img {
+                display: none;
+            }
+        }
+        .trained-staff {
+            margin-top: 0;
+        }
+    }
+}
+@media(max-width: 1110px) {
+    main {
+        .time-of-companys-existence-container {
+            .time-of-companys-existence {
+                .images {
+                    .img-compn-exstnc-2 {
+                        bottom: -30%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 840px) {
+    main {
+        .time-of-companys-existence-container {
+            .time-of-companys-existence {
+                .images {
+                    .img-compn-exstnc-2 {
+                        bottom: -40%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// mobile
+
+@media(max-width: 500px) {
+    .container-that-was-done {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        margin-top: 56px;
+        > div {
+            display: flex;
+            position: relative;
+            margin: 0 30px 15px 0;
+            border-radius: unset;
+            height: unset;
+            background: unset;
+            padding: unset;
+            &:nth-child(1) {
+                p {
+                    right: -40px;
+                }
+            }
+            &:nth-child(2) {
+                p {
+                    right: -34px;
+                }
+            }
+            &:nth-child(3) {
+                display: flex;
+                p {
+                    position: static;
+                    margin: 0px 0 0 15px;
+                }
+            }
+            p {
+                position: absolute;
+                top: 14px;
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-transform: capitalize;
+                color: #212529;
+            }
+            .field {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                padding: 15px 7px;
+                width: 50px;
+                height: 50px;
+                background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+                border-radius: 35px;
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 20px;
+                color: #212529;
+            }
+        }
+    }
+    main {
+        h1 {
+            font-size: 28px;
+            line-height: 38px;
+            span {
+                color: #00730C;
+            }
+            &:first-child {
+                position: relative;
+                margin-bottom: 0px;
+                &::after {
+                    position: absolute;
+                    top: -35px;
+                    left: 43%;
+                    content: "About Us";
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #212529;
+                }
+            }
+        }
+        .our-skills {
+            margin: 0 15px;
+            .skills-descr {
+                padding: 50px 0 30px;
+            }
+            h3 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+        .descr-missions {
+            margin: 50px 15px 0 15px;
+        }
+        .time-of-companys-existence-container {
+            .time-of-companys-existence {
+                .about-our-exp {
+                    .descr-inf {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .trained-staff {
+            .descrb-btn-train-staff {
+                .descrb-train {
+                    text-align: unset;
+                }
+            }
+        }
+    }
+}

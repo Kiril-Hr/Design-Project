@@ -1,0 +1,521 @@
+main {
+    .insights-articles {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 255px 0 255px;
+        .descp-our-artcs-ingts {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            padding: 0 140px;
+            h3 {
+                align-self: center;
+                @include fontNameOfTitle();
+                color: #212529;
+                margin-bottom: 20px;
+                span {
+                    color: #00730C;
+                }
+            }
+            p {
+                @include fontParagraphNunito();
+                text-align: center;
+                color: #676767;
+            }
+        }
+        .slider-2 {
+            width: 100%;
+            overflow: hidden;
+            height: fit-content;
+            .slider-2-line {
+                display: flex;
+                justify-content: center;
+                width: fit-content;
+                [class*='slide-2-'] {
+                    position: relative;
+                    background: #C4C4C4;
+                    border-radius: 10px;
+                    z-index: 20;
+                    width: 450px;
+                    height: 550px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    &:nth-child(1) {
+                        background-image: url(../assets/backgrounds/instr.png);
+                    }
+                    &:nth-child(2) {
+                        background-image: url(../assets/backgrounds/two-hands-keep-plant.png);
+                    }
+                    &:nth-child(3) {
+                        background-image: url(../assets/backgrounds/red-girl-stay.png);
+                    }
+                    &:nth-child(4) {
+                        background-image: url(../assets/backgrounds/young-beautiful-florist-posing-smiling-among-flowers.png);
+                    }
+                    &:nth-child(5) {
+                        background-image: url(../assets/backgrounds/instr.png);
+                    }
+                    &:nth-child(6) {
+                        background-image: url(../assets/backgrounds/two-hands-keep-plant.png);
+                    }
+                    &:nth-child(7) {
+                        background-image: url(../assets/backgrounds/red-girl-stay.png);
+                    }
+                    &:nth-child(8) {
+                        background-image: url(../assets/backgrounds/young-beautiful-florist-posing-smiling-among-flowers.png);
+                    }
+                    &:nth-child(9) {
+                        background-image: url(../assets/backgrounds/two-hands-keep-plant.png);
+                    }
+                    &:nth-child(10) {
+                        background-image: url(../assets/backgrounds/red-girl-stay.png);
+                    }
+                    &:nth-child(11) {
+                        background-image: url(../assets/backgrounds/young-beautiful-florist-posing-smiling-among-flowers.png);
+                    }
+                    &:nth-child(12) {
+                        background-image: url(../assets/backgrounds/young-beautiful-florist-posing-smiling-among-flowers.png);
+                    }
+                    .hover {
+                        &:hover.container-for-shadow {
+                            background-color: #FFFFFF;
+                            box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                            background-image: none;
+                            &::after {
+                                background-image: url(../assets/home-page-02/big-sheet.png);
+                            }
+                        }
+                        &:hover.container-for-shadow  {
+                            .container-inform {
+                                margin-top: 165px;
+                                .container-for-hide {
+                                    height: 390px;
+                                    a {
+                                        color: #00730C;
+                                    }
+                                    p {
+                                        color: #676767;
+                                    }
+                                }
+                            }
+                        }
+                        &:hover.container-for-shadow {
+                            .writer-inform {
+                                margin-top: -95px;
+                                border-top: 1px solid #E3E3E3;;
+                                .date {
+                                    color: #676767;
+                                }
+                                .writer {
+                                    color: #676767;
+                                    text-decoration: none;
+                                    &::after {
+                                        background-image: url(../assets/home-page-02/Admin-green.png);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .container-for-shadow {
+                        position: absolute;
+                        height: 550px;
+                        border-radius: 10px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            width: 200px;
+                            height: 200px;
+                            z-index: 30;
+                            top: 0;
+                            right: 0;
+                        }
+                        .chapter {
+                            position: absolute;
+                            background: #D9F1E0;
+                            width: fit-content;
+                            padding: 3px 20px;
+                            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+                            font-family: 'Nunito';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 30px;
+                            text-align: center;
+                            color: #00730C;
+                            margin: 100px 0 0 30px;                    
+                        }                   
+                        .container-inform {
+                            position: relative;
+                            margin: 210px 30px 0 30px;
+                            transition: margin-top 0.3s ease-in-out;
+                            overflow: hidden;
+                            .container-for-hide {
+                                height: 190px;
+                                a {
+                                    font-family: 'Nunito';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    line-height: 33px;
+                                    text-transform: capitalize;
+                                    color: #FFFFFF;
+                                    text-decoration: none;
+                                }
+                                p {
+                                    font-family: 'Nunito';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                    color: #FFFFFF;
+                                    margin-top: 30px;
+                                }
+                            }
+                        }
+                        .writer-inform {
+                            display: flex;
+                            justify-content: space-between;
+                            border-top: 1px solid #FFFFFF;
+                            height: 83px;
+                            margin-top: 60px;
+                            padding: 30px 33px 33px 43px;
+                            .date {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                text-decoration-line: underline;
+                                text-transform: uppercase;
+                                color: #FFFFFF;
+                                
+                            }
+                            .writer {
+                                position: relative;
+                                font-family: 'Nunito';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 30px;
+                                display: flex;
+                                align-items: center;
+                                color: #FFFFFF;
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    background-image: url(../assets/home-page-02/Admin.png);
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    width: 21px;
+                                    height: 21px;
+                                    left: -35px;
+                                }
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    background: #FFFFFF;
+                                    width: 94px;
+                                    height: 1px;
+                                    bottom: -5px;
+                                    right: -4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination {
+                display: flex;
+                justify-content: center;
+                margin-top: 60px;
+                gap: 30px;
+                position: unset;
+            }
+            .swiper-pagination-bullet {
+                width: 50px;
+                height: 7px;
+                opacity: unset;
+                border-radius: unset;
+
+            }
+        }
+    }
+}
+@media(max-width: 1917px) {
+    main {
+        .insights-articles {
+            .slider-2 {
+                .slider-2-line {
+                    [class*=slide-2-] {
+                        .container-for-shadow {
+                            .container-inform {
+                                .container-for-hide {
+                                    p {
+                                        font-size: 15px;
+                                        line-height: 27px;
+                                    }
+                                    a {
+                                        font-size: 20px;
+                                        line-height: 29px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }     
+        }
+    } 
+}
+@media(max-width: 1700px) {
+    main {
+        .insights-articles {
+            .slider-2 {
+                width: 85%;
+                .slider-2-line {
+                    [class*=slide-2-] {
+                        .container-for-shadow {
+                            .container-inform {
+                                .container-for-hide {
+                                    p {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                    a {
+                                        font-size: 22px;
+                                        line-height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }     
+        }
+    } 
+}
+@media(max-width: 1460px) {
+    main {
+        .insights-articles {
+            margin: 150px 115px 0 115px;
+            .descp-our-artcs-ingts {
+                padding: 0;
+            }
+        }
+    }
+}
+@media(max-width: 1400px) {
+    main {
+        .insights-articles {
+            margin-top: 50px;
+        }
+    }  
+}
+@media(max-width: 1240px) {
+    main {
+        .insights-articles {
+            .descp-our-artcs-ingts {
+                h3 {
+                    font-size: 45px;
+                    line-height: 61px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1199px) {
+    main {
+        .insights-articles {
+            .slider-2 {
+                width: 60%;
+                .swiper-pagination {
+                    gap: 5px;
+                }
+                .slider-2-line {
+                    [class*=slide-2-] {
+                        .container-for-shadow {
+                            .container-inform {
+                                .container-for-hide {
+                                    p {
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                    }
+                                    a {
+                                        font-size: 22px;
+                                        line-height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }     
+        }
+    }
+}
+@media(max-width: 1100px) {
+    main {
+        .insights-articles {
+            margin-top: -50px;
+        }
+    }
+}
+@media(max-width: 960px) {
+    main {
+        .insights-articles {
+            margin-bottom: 50px;
+        }
+    }
+}
+@media(max-width: 840px) {
+    main {
+        .insights-articles {
+            .slider-2 {
+                width: 80%;
+            }
+        }
+    }
+}
+@media(max-width: 767px) {
+    main {
+        .insights-articles {
+            margin: 150px 60px 0 60px;
+            .descp-our-artcs-ingts {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media(max-width: 660px) {
+    main {
+        .insights-articles {
+            .slider-2 {
+                    width: 100%;
+            }
+        }
+    }
+}
+
+// mobile
+
+@media(max-width: 500px) {
+    main {
+        main {
+            .insights-articles {
+                margin: 30px 0 0 0;
+                .descp-our-artcs-ingts {
+                    margin: 0 15px 40px 15px;
+                    h3 {
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 38px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+                .slider-2 {
+                    width: 375px;
+                    padding: 0 15px;
+                    .switch-lines {
+                        display: none;
+                    }
+                    .slider-2-line {
+                        [class*=slide-2-] {
+                            position: relative;
+                            width: 345px;
+                            height: 438px;
+                            background-color: #FFFFFF;
+                            background-image: none!important;
+                            
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image: url(../assets/home-page-02/big-sheet-mobile.png);
+                                width: 117px;
+                                height: 117px;
+                                background-size: contain;
+                                top: 15px;
+                                right: -5px;
+                            }
+                            .container-for-shadow {
+                                box-shadow: 2px 11px 20px rgba(51, 51, 51, 0.08);
+                                height: unset;
+                                &::after {
+                                    display: none;
+                                }
+                                .chapter {
+                                    width: 132px;
+                                    height: 30px;
+                                    margin: 30px 0 0 20px;
+                                    padding: 0;
+                                }
+                                .container-inform {
+                                    margin: 100px 20px 0 20px;
+                                    .container-for-hide {
+                                        a {
+                                            color: #00730C;
+                                            font-size: 16px;
+                                            line-height: 22px;
+                                        }
+                                        p {
+                                            margin-top: 15px;
+                                            font-size: 14px;
+                                            font-family: 'Nunito';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 22px;
+                                            color: #676767;
+        
+                                        }
+                                    }
+                                }
+                                .writer-inform {
+                                    position: relative;
+                                    height: 65px;
+                                    margin-top: 30px;
+                                    padding: 10px 20px 35px 20px;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 87%;
+                                        border-top: 2px solid #E3E3E3;
+                                        top: 0;
+                                    }
+                                    .writer {
+                                        right: 15px;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        color: #676767;
+                                        &::after {
+                                            background-image: url(../assets/home-page-02/Admin-green.png);
+                                        }
+                                    }
+                                    .date {
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                        line-height: 19px;
+                                        color: #676767;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
