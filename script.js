@@ -131,3 +131,36 @@ noHoverArcIns.forEach((item) => {
     item.classList.remove("hover");
   }
 });
+
+// project slider
+
+const slideProject = document.querySelectorAll(".container-shadow");
+const innerBlock = document.querySelectorAll(".inner-block");
+const innerBlockP = document.querySelectorAll(".inner-block p");
+
+const CutBlock = () => {
+  const descrOfProj = [];
+  const descrOfProjCut = [];
+
+  innerBlockP.forEach((item) => {
+    let innerText = item.outerText;
+    if (innerText.length > 40) {
+      let innerCutText = innerText.slice(0, 65).concat(" ...");
+      item.textContent = innerCutText;
+      descrOfProjCut.push(innerCutText);
+    }
+    descrOfProj.push(innerText);
+  });
+
+  slideProject.forEach((item, i) => {
+    item.addEventListener("mouseover", () => {
+      item.children[0].lastElementChild.children[1].textContent =
+        descrOfProj[i];
+    });
+    item.addEventListener("mouseout", () => {
+      item.children[0].lastElementChild.children[1].textContent =
+        descrOfProjCut[i];
+    });
+  });
+};
+CutBlock();

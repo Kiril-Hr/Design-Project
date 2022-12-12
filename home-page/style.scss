@@ -111,6 +111,9 @@ header {
 // mobile
 
 @media(max-width: 500px) {
+    main {
+        padding-bottom: 0;
+    }
     header {
         .container-big-inform {
             flex-direction: column-reverse;

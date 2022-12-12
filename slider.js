@@ -139,3 +139,24 @@ if (document.querySelector(".slider-2")) {
     });
   }
 }
+
+// slider projects
+if (document.querySelector(".slider-projects")) {
+  new Swiper(".slider-projects", {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 300,
+    simulateTouch: false,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
+}

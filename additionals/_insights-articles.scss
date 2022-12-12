@@ -374,7 +374,7 @@ main {
         }
     }
 }
-@media(max-width: 840px) {
+@media(max-width: 860px) {
     main {
         .insights-articles {
             .slider-2 {
@@ -408,111 +408,109 @@ main {
 
 @media(max-width: 500px) {
     main {
-        main {
-            .insights-articles {
-                margin: 30px 0 0 0;
-                .descp-our-artcs-ingts {
-                    margin: 0 15px 40px 15px;
-                    h3 {
-                        font-weight: 700;
-                        font-size: 28px;
-                        line-height: 38px;
-                    }
-                    p {
-                        font-size: 14px;
-                        line-height: 22px;
-                    }
+        .insights-articles {
+            margin: 30px 0 0 0;
+            .descp-our-artcs-ingts {
+                margin: 0 15px 40px 15px;
+                h3 {
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 38px;
                 }
-                .slider-2 {
-                    width: 375px;
-                    padding: 0 15px;
-                    .switch-lines {
-                        display: none;
-                    }
-                    .slider-2-line {
-                        [class*=slide-2-] {
-                            position: relative;
-                            width: 345px;
-                            height: 438px;
-                            background-color: #FFFFFF;
-                            background-image: none!important;
-                            
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+            .slider-2 {
+                width: 375px;
+                padding: 0 15px;
+                .switch-lines {
+                    display: none;
+                }
+                .slider-2-line {
+                    [class*=slide-2-] {
+                        position: relative;
+                        width: 345px;
+                        height: 438px;
+                        background-color: #FFFFFF;
+                        background-image: none!important;
+                        
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-image: url(../assets/home-page-02/big-sheet-mobile.png);
+                            width: 117px;
+                            height: 117px;
+                            background-size: contain;
+                            top: 15px;
+                            right: -5px;
+                        }
+                        .container-for-shadow {
+                            box-shadow: 2px 11px 20px rgba(51, 51, 51, 0.08);
+                            height: unset;
                             &::after {
-                                content: "";
-                                position: absolute;
-                                background-position: center;
-                                background-repeat: no-repeat;
-                                background-image: url(../assets/home-page-02/big-sheet-mobile.png);
-                                width: 117px;
-                                height: 117px;
-                                background-size: contain;
-                                top: 15px;
-                                right: -5px;
+                                display: none;
                             }
-                            .container-for-shadow {
-                                box-shadow: 2px 11px 20px rgba(51, 51, 51, 0.08);
-                                height: unset;
-                                &::after {
-                                    display: none;
-                                }
-                                .chapter {
-                                    width: 132px;
-                                    height: 30px;
-                                    margin: 30px 0 0 20px;
-                                    padding: 0;
-                                }
-                                .container-inform {
-                                    margin: 100px 20px 0 20px;
-                                    .container-for-hide {
-                                        a {
-                                            color: #00730C;
-                                            font-size: 16px;
-                                            line-height: 22px;
-                                        }
-                                        p {
-                                            margin-top: 15px;
-                                            font-size: 14px;
-                                            font-family: 'Nunito';
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 22px;
-                                            color: #676767;
-        
-                                        }
+                            .chapter {
+                                width: 132px;
+                                height: 30px;
+                                margin: 30px 0 0 20px;
+                                padding: 0;
+                            }
+                            .container-inform {
+                                margin: 100px 20px 0 20px;
+                                .container-for-hide {
+                                    a {
+                                        color: #00730C;
+                                        font-size: 16px;
+                                        line-height: 22px;
                                     }
-                                }
-                                .writer-inform {
-                                    position: relative;
-                                    height: 65px;
-                                    margin-top: 30px;
-                                    padding: 10px 20px 35px 20px;
-                                    &::before {
-                                        content: "";
-                                        position: absolute;
-                                        width: 87%;
-                                        border-top: 2px solid #E3E3E3;
-                                        top: 0;
-                                    }
-                                    .writer {
-                                        right: 15px;
+                                    p {
+                                        margin-top: 15px;
                                         font-size: 14px;
+                                        font-family: 'Nunito';
+                                        font-style: normal;
+                                        font-weight: 400;
                                         line-height: 22px;
                                         color: #676767;
-                                        &::after {
-                                            background-image: url(../assets/home-page-02/Admin-green.png);
-                                        }
-                                    }
-                                    .date {
-                                        font-weight: 700;
-                                        font-size: 14px;
-                                        line-height: 19px;
-                                        color: #676767;
-                                        text-decoration: none;
+    
                                     }
                                 }
                             }
-                            
+                            .writer-inform {
+                                position: relative;
+                                height: 65px;
+                                margin-top: 30px;
+                                padding: 10px 20px 35px 20px;
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 87%;
+                                    border-top: 2px solid #E3E3E3;
+                                    top: 0;
+                                }
+                                .writer {
+                                    right: 15px;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    color: #676767;
+                                    &::after {
+                                        background-image: url(../assets/home-page-02/Admin-green.png);
+                                    }
+                                }
+                                .date {
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    color: #676767;
+                                    text-decoration: none;
+                                }
+                            }
                         }
+                        
                     }
                 }
             }

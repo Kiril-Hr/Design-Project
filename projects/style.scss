@@ -1,0 +1,296 @@
+@import '../additionals/fonts';
+@import '../additionals/mixins';
+@import '../additionals/variable';
+@import '../additionals/header';
+@import '../additionals/header-about-page';
+@import '../additionals/main-body';
+@import '../additionals/footer';
+main {
+    padding: 100px 0;
+    .title {
+        margin: 0 27%;
+        .descr-title {
+            text-align: center;
+            .chapters-name, h1 {
+                font-family: 'Nunito';
+                font-style: normal;
+            } 
+            .chapters-name {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: black;
+                margin-bottom: 30px;
+            }
+            h1 {
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 61px;
+                color: black;
+                margin-bottom: 30px;
+                span {
+                    color: #00730C;;
+                }
+            }
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                color: #676767;
+            }
+        }
+        .sort-projects {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            .btn-sort {
+                width: fit-content;
+                padding: 10px 26px;
+                border: 1px solid #00730C;
+                border-radius: 6px;
+                cursor: pointer;
+                i {
+                    font-family: 'Nunito';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #00730C;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                i.active-sort-btn {
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                }
+            }
+            .btn-sort.active-sort-btn {
+                background: #00730C;
+            }
+        }
+    }
+    .slider-projects {
+        display: flex;
+        justify-content: center;
+        margin: 20px 9% 0 9%;
+        padding: 40px 3.9% 120px 3.9%;
+        .swiper-pagination {
+            bottom: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .swiper-pagination-bullet {
+            display: block;
+            padding: 3px;
+            width: 40px;
+            height: 40px;
+            border: 1px solid #00730C;
+            border-radius: 5px;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+            color: #00730C;
+            background: transparent;
+            margin: 0;
+        }
+        .swiper-pagination-bullet-active {
+            background: #00730C;
+            color: white;
+        }
+        .prev,
+        .next {
+            position: absolute;
+            z-index: 20;
+            bottom: 25px;
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 1px solid #00730C;
+            cursor: pointer;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 10px;
+            }
+        }
+        .next {
+            right: 630px;
+            &::after {
+                background: url(../assets/home-page-02/Arrow-slider-green-right.png) no-repeat center;
+                left: 10px;
+            }
+           &:hover {
+                background-color: #00730C;
+                &::after {
+                    background-image: url(../assets/home-page-02/Arrow-slider-white-right.png);
+                }
+            }
+        }
+        .prev {
+            left: 630px;
+            &::after {
+                background: url(../assets/home-page-02/Arrow-slider-green-left.png) no-repeat center;
+                right: 10px;
+            }
+            &:hover {
+                background-color: #00730C;
+                &::after {
+                    background-image: url(../assets/home-page-02/Arrow-slider-white-left.png);
+                }
+            }
+        }
+        .slider-wrapper-projects {
+            display: flex;
+            .swiper-slide {
+                display: flex;
+                gap: 30px 0;
+                flex-direction: column;
+                .row {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    .container-shadow {
+                        width: 330px;
+                        height: 406px;
+                        background: linear-gradient(175deg, #FFFFFF 0%, #EAEAEA 92.31%);
+                        box-shadow: 4.16604px 47.6181px 95.6px rgba(51, 51, 51, 0.1035), inset -0.935046px -10.6876px 10.7284px #E5E5E5, inset 0.935046px 10.6876px 10.7284px #FFFFFF;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        &:hover {
+                            transform: scale(1.03);
+                            background: rgba(0, 0, 0, 0.27);
+                            box-shadow: inset 23.9px -23.9px 23.9px rgba(149, 149, 149, 0.12);
+                            .slide-project {
+                                position: relative;
+                                height: 100%;
+                                .img {
+                                    filter: blur(7px);
+                                    height: 100%;
+                                }
+                                .inner-block {
+                                    height: 100%;
+                                    bottom: -40px;
+                                    position: absolute;
+                                    h3, p {
+                                        color: white;
+                                    }
+                                    .btn-read {
+                                        display: block;
+                                        position: relative;
+                                        text-decoration: none;
+                                        left: 2%;
+                                        width: 92%;
+                                        padding: 10px 30px;
+                                        border-bottom: 2px solid white;
+                                        top: 120px;
+                                        &::after,
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                        }
+                                        &::after {
+                                            width: 30px;
+                                            height: 30px;
+                                            right: 0;
+                                            bottom: 10px;
+                                            border-radius: 50%;
+                                            border: 3px solid white;
+                                            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.2);
+                                        }
+                                        &::before {
+                                            background: url(../assets/home-page-02/project-active-arrow.svg) no-repeat center / cover;
+                                            right: 8px;
+                                            bottom: 12px;
+                                            width: 15px;
+                                            height: 26px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .slide-project {
+                            height: 100%;
+                            overflow: hidden;
+                            .img {
+                                height: 260px;                    
+                                background-color: #c4c4c4;
+                                border-radius: 10px;
+                                transition: height .2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+                                overflow: hidden;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .inner-block {
+                                padding: 20px 15px 0 25px;
+                                bottom: 0;
+                                transition: bottom .3s ease;
+                                overflow: hidden;
+                                h3, p {
+                                    font-family: 'Nunito';
+                                    font-style: normal;
+                                }
+                                h3 {
+                                    font-weight: 700;
+                                    font-size: 24px;
+                                    line-height: 33px;
+                                    text-transform: capitalize;
+                                    margin-bottom: 10px;
+                                    color: #00730C;
+                                }
+                                p {
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                    color: #676767;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    .block-our-best-services {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        height: 433px;
+        background: linear-gradient(90deg, rgba(195,223,197,1) 15%, rgba(247,247,233,1) 34%, rgba(255,255,255,1) 72%);
+        .descr-block {
+            padding: 100px 0px 100px 13%;
+            h3 {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 61px;
+                color: #212529;
+                span {
+                    color: #00730C;
+                }
+                margin-bottom: 60px;
+            }
+        }
+        .back-img {
+            background: url(../assets/backgrounds/project-background.svg) no-repeat center / cover;
+            max-width: 962px;
+            max-height: 431px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
