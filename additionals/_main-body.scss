@@ -10,7 +10,11 @@ body {
     --swiper-pagination-bullet-inactive-opacity: #00730C;
 }
 main {
-    width: 100%;
     height: fit-content;
     padding: 100px 0;
+}
+@media(max-width: 500px) {
+    main {
+        padding: 50px 0;
+    }
 }

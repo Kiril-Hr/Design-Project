@@ -1,0 +1,205 @@
+@import '../additionals/fonts';
+@import '../additionals/mixins';
+@import '../additionals/variable';
+@import '../additionals/header';
+@import '../additionals/header-about-page';
+@import '../additionals/main-body';
+@import '../additionals/footer';
+
+main {
+    margin: 0 255px;
+    .form-contacts {
+        display: flex;
+        gap: 30px;
+        .form-contact {
+            h3 {
+                font-family: 'Nunito';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 61px;
+                color: #000000;
+                margin-bottom: 30px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px 0;
+                input,
+                textarea {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    padding: 13px 30px 13px 20px;
+                    resize: none;
+                    outline: none;
+                    border: 1px solid rgb(158, 158, 158);
+                    border-radius: 3px;
+                    font-size: 18px;
+                }
+                textarea {
+                    max-height: 220px;
+                }
+                input {
+                    height: 54px;
+                }
+                input::placeholder,
+                textarea::placeholder {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #676767;
+                }
+                .full-name,
+                .contacts {
+                    display: flex;
+                    gap: 30px;
+                    input {
+                        width: 450px;
+                    }
+                }
+                
+                .container-btn {
+                    display: flex;
+                    justify-content: flex-end;
+                    button {
+                        width: 174px;
+                        height: 50px;
+                        background: #00730C;
+                        box-shadow: 1px 1px 25px rgb(0, 115, 12, 0.2);
+                        border-radius: 5px;
+                        font-family: 'Nunito';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 24px;
+                        color: white;
+                        border: 0;
+                        cursor: pointer;
+                    } 
+                }
+            }
+        }
+        .get-in-touch {
+            padding: 40px 30px 50px;
+            width: 450px;
+            height: max-content;
+            background: #FFF8F1;
+            border-radius: 5px;
+            h4, p, .contact i {
+                font-family: 'Nunito';
+                font-style: normal;
+                color: #212529;
+            }
+            h4 {
+                font-weight: 700;
+                font-size: 33px;
+                line-height: 45px;
+                margin-bottom: 50px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 50px;
+            }
+            .contact {
+                display: flex;
+                position: relative;
+                align-items: center;
+                width: 390px;
+                height: 64px;
+                background: #FFFFFF;
+                border-radius: 5px;
+                margin-bottom: 30px;
+                padding-left: 30px;
+                transition: all .35s ease-in-out;
+                cursor: pointer;
+                i {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-left: 20px;
+                }
+                svg {
+                    width: 35px;
+                    height: 35px;
+                    path {
+                        fill: #00730C;
+                    }
+                }
+                &:hover {
+                    background: #00730C;
+                    i {
+                        color: white;
+                    }
+                    svg {
+                        path {
+                            fill: white;
+                        }
+                    }
+                }
+            }
+            .links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+                height: 40px;
+                a {
+                    position: relative;
+                    text-decoration: none;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        top: 5px;
+                        left: 5px;
+                    }
+                }
+                .fb {
+                    background-color: #365390;
+                    &:after {
+                        background: url(../assets/home-page-02/facebook-hm-mobile.svg) no-repeat center / cover;
+                    }
+                }
+                .tw {
+                    background-color: #009FEE;
+                    &:after {
+                        background: url(../assets/home-page-02/twitter-hm-mobile.svg) no-repeat center / cover;
+                    }
+                }
+                .gplus {
+                    background-color: #367CFF;
+                    &:after {
+                        background: url(../assets/home-page-02/Google-hm-mobile.svg) no-repeat center / cover;
+                    }
+                }
+                .pinterest {
+                    background-color: #EF1408;
+                    &:after {
+                        background: url(../assets/home-page-02/pinterest.png) no-repeat center / cover;
+                    }
+                }
+                .in {
+                    background-color: #0079B2;
+                    &:after {
+                        background: url(../assets/home-page-02/linkedin-hm-mobile.svg) no-repeat center / cover;
+                    }
+                }
+            }
+        }
+    }
+    img {
+        margin-top: 100px;
+        object-fit: cover;
+        max-height: 422px;
+        width: 100%;
+    }
+}

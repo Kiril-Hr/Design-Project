@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>About Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../additionals/reset.css">
 </head>
-<body>  
-    
+<body>
+
     <header class="header">
         <nav class="inform">
             <div class="container-inform">
@@ -29,7 +28,7 @@
             </div>
         </nav>
         <div class="container-logo-menu">
-            <a href="projects.html" class="logo"><img src="../assets/home-page-02/LOGO.png" alt="Plants-logo"></a>
+            <a href="about.html" class="logo"><img src="../assets/home-page-02/LOGO.png" alt="Plants-logo"></a>
             <div class="container-menu-btn">
                 <div class="container-scroll-mobile-menu">
                     <div class="menu">
@@ -70,10 +69,10 @@
                                 <p></p>
                                 <ul class="submenu-6">
                                     <li class="sub-submenu">
-                                        <a href="projects.html">Project</a>
+                                        <a href="../projects/projects.html">Project</a>
                                         <ul class="sub-submenu-1">
                                             <li>
-                                                <a href="project-details.html">Project details</a>
+                                                <a href="../projects/project-details.html">Project details</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -86,7 +85,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="../contact-us/contact.html">Contact</a>
+                                        <a href="contact.html">Contact</a>
                                     </li>
                                 </ul>
                             </li>
@@ -107,10 +106,10 @@
                                 <p></p>
                                 <ul class="submenu-4">
                                     <li>
-                                        <a href="projects.html">Project</a>
+                                        <a href="../projects/projects.html">Project</a>
                                     </li>
                                     <li>
-                                        <a href="project-details.html">Project Details</a>
+                                        <a href="../projects/project-details.html">Project Details</a>
                                     </li>
                                 </ul>
                             </li>
@@ -126,7 +125,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu-contacts-func"><a href="../contact-us/contact.html">Contact</a></li>
+                            <li class="menu-contacts-func"><a href="contact.html">Contact</a></li>
                         </ul>
                         <div class="contacts-links-mobile-menu">
                             <div class="links-mobile">
@@ -151,53 +150,75 @@
         </div>
        <div class="inform-about-page">
             <div class="container-position-inform">
-                <h2>Projects</h2>
+                <h2>Contact Us</h2>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took of type and scrambled it to make a type specimen book.
                 </p>
                 <nav>
                     <a href="../index.html">Home</a>
-                    <a href="projects.html">Projects</a>
+                    <a href="about.html">Contact Us</a>
                 </nav>
             </div>
        </div>
     </header>
 
     <main class="main">
-        <div class="title">
-            <div class="descr-title">
-                <p class="chapters-name">Latest Projects</p>
-                <h1><span>Introduce </span>Some Project</h1>
+        <div class="form-contacts">
+            <div class="form-contact">
+                <h3>Contacts Us</h3>
+                <form method="post">
+                    <div class="full-name">
+                        <input type="text" placeholder="Name" value="" required>
+                        <input type="text" placeholder="Last Name" value="" required>
+                    </div>
+                    <div class="contacts">
+                        <input type="text" placeholder="Email" value="" required>
+                        <input type="text" placeholder="Phone no." value="" required>
+                    </div>
+                    <input type="text" placeholder="Subject" value="" required>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message" maxlength="300" required></textarea>
+                    <div class="container-btn">
+                        <button class="submit" type="submit">Submit Now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="get-in-touch">
+                <h4>Get in Touch</h4>
                 <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Lorem Ipsum is simply dummy text of the printingand typesetting industry. Lorem Ipsum has been the industry.
                 </p>
-            </div>
-            <div class="sort-projects">
-                <div id="view-all" class="btn-sort"><i>view all</i></div>
-                <div id="garden-care" class="btn-sort"><i>garden care</i></div>
-                <div id="lawn-care" class="btn-sort"><i>lawn care</i></div>
-                <div id="planting" class="btn-sort"><i>planting</i></div>
-                <div id="landscape" class="btn-sort"><i>landscape</i></div>
-            </div>
-        </div>
-        <div class="slider-projects swiper">
-            <div class="slider-wrapper-projects swiper-wrapper">
-            </div>
-            <div class="prev"></div>
-            <div class="next"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-        <div class="block-our-best-services">
-            <div class="descr-block">
-                <h3>Our Best Reliable <span>Gardening and Lawn</span> services</h3>
-                <div class="btn-call-us">
-                    <button>
-                        <i>Call Us</i>
-                    </button>
+                <div class="contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.99916 0.000976562C4.48544 0.000976562 0 4.48642 0 10.0001C0 15.5139 4.48544 19.9993 9.99916 19.9993C12.2223 19.9993 14.3271 19.2852 16.107 17.9162C16.8136 17.2962 16.8011 16.4113 16.4744 15.8096C16.2678 15.4289 15.9528 15.168 15.587 15.0397L15.7545 14.8522C16.0045 14.5714 16.1145 14.1973 16.0553 13.8265C15.997 13.4557 15.777 13.1332 15.4528 12.9424L13.2522 11.6542C12.7531 11.3625 12.0715 11.47 11.6873 11.9017L11.1991 12.4508C11.1191 12.5408 11.0083 12.5908 10.8883 12.5908C10.7458 12.5908 10.6191 12.5225 10.5408 12.4041L7.85852 8.35695C7.79021 8.25446 7.77185 8.13197 7.8052 8.01366C7.83852 7.89449 7.91851 7.80118 8.031 7.74951L8.79844 7.39286C9.33757 7.1437 9.62755 6.54293 9.48838 5.9663L8.89093 3.48818C8.71263 2.74743 7.8477 2.32328 7.15026 2.64743L6.46532 2.96491C5.4529 3.43487 4.70714 4.32229 4.41881 5.40052L4.29382 5.87048C4.06802 6.71623 4.14633 7.61952 4.51462 8.41359L5.13039 9.7418C6.03363 11.6908 7.26689 13.444 8.79508 14.9539L9.30336 15.4555C10.0583 16.2013 11.0574 16.6312 12.1181 16.6654L12.2556 16.6679C13.1739 16.6679 14.0588 16.3637 14.7812 15.8196C14.7954 15.8171 14.8095 15.8205 14.8245 15.8163C15.3912 15.658 15.6711 16.0763 15.7428 16.208C15.9111 16.5196 15.9194 16.9746 15.5795 17.2746C13.9679 18.5128 12.0389 19.1677 10.0008 19.1677C4.94701 19.1677 0.834852 15.0556 0.834852 10.0018C0.834852 4.94806 4.94708 0.835906 10.0008 0.835906C15.0546 0.835906 19.1667 4.94806 19.1667 10.0018C19.1667 10.2318 19.3534 10.4185 19.5834 10.4185C19.8134 10.4185 20 10.2318 20 10.0018C19.9983 4.48646 15.512 0.000976562 9.99916 0.000976562Z" fill="white"/>
+                    </svg>
+                    <i>+01 123456789, 1234567890</i>
+                </div>
+                <div class="contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.9592 10.8301L11.2841 12.5108C10.6049 13.1924 9.40973 13.2071 8.71578 12.5108L7.04066 10.8301L1.02441 16.8659C1.24836 16.9694 1.49527 17.0312 1.75777 17.0312H18.2421C18.5046 17.0312 18.7515 16.9695 18.9753 16.8659L12.9592 10.8301Z" fill="white"/>
+                        <path d="M18.2421 2.96875H1.7577C1.4952 2.96875 1.24828 3.03055 1.02441 3.1341L7.4532 9.58422C7.45363 9.58465 7.45414 9.58473 7.45457 9.58516C7.455 9.58559 7.45508 9.58617 7.45508 9.58617L9.54543 11.6834C9.76746 11.9055 10.2324 11.9055 10.4544 11.6834L12.5443 9.58652C12.5443 9.58652 12.5448 9.58559 12.5453 9.58516C12.5453 9.58516 12.5462 9.58465 12.5466 9.58422L18.9753 3.13406C18.7514 3.03047 18.5046 2.96875 18.2421 2.96875Z" fill="white"/>
+                        <path d="M0.186953 3.95361C0.0710937 4.18791 0 4.44799 0 4.72658V15.2735C0 15.552 0.0710156 15.8121 0.186914 16.0464L6.21359 10.0002L0.186953 3.95361Z" fill="white"/>
+                        <path d="M19.8127 3.95361L13.7861 10.0003L19.8127 16.0466C19.9286 15.8123 19.9997 15.5522 19.9997 15.2735V4.72666C19.9997 4.44799 19.9286 4.18791 19.8127 3.95361Z" fill="white"/>
+                    </svg>
+                    <i>Plantingservice@gmail.com</i>
+                </div>
+                <div class="contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0C6.48574 0 3.55469 2.83086 3.55469 6.44531C3.55469 7.82039 3.96789 9.04656 4.7609 10.1955L9.50676 17.601C9.73699 17.961 10.2635 17.9603 10.4932 17.601L15.2597 10.1704C16.0356 9.07344 16.4453 7.78543 16.4453 6.44531C16.4453 2.89137 13.5539 0 10 0ZM10 9.375C8.38465 9.375 7.07031 8.06066 7.07031 6.44531C7.07031 4.82996 8.38465 3.51562 10 3.51562C11.6154 3.51562 12.9297 4.82996 12.9297 6.44531C12.9297 8.06066 11.6154 9.375 10 9.375Z" fill="white"/>
+                        <path d="M11.8406 18.2126L11.8408 18.2123L14.6956 13.749C15.8989 14.0422 16.857 14.4425 17.5165 14.9101C18.2082 15.4005 18.5391 15.939 18.5391 16.4846C18.5391 16.9635 18.3042 17.4056 17.8488 17.8105C17.3907 18.2178 16.7243 18.5724 15.9083 18.8633C14.2779 19.4445 12.1106 19.7502 10 19.7502C7.88938 19.7502 5.72214 19.4445 4.09168 18.8633C3.27567 18.5724 2.60928 18.2178 2.15119 17.8105C1.6958 17.4056 1.46094 16.9635 1.46094 16.4846C1.46094 15.9394 1.7913 15.4013 2.48208 14.9111C3.14068 14.4438 4.09743 14.0436 5.29918 13.7503L8.15872 18.2136L8.15875 18.2137C9.01699 19.5525 10.9784 19.5569 11.8406 18.2126Z" stroke="white" stroke-width="0.5"/>
+                    </svg>
+                    <i>2072 Pinnickinick Street, WA 98370</i>
+                </div>
+                <div class="links">
+                    <a href="#" class="fb"></a>
+                    <a href="#" class="tw"></a>
+                    <a href="#" class="gplus"></a>
+                    <a href="#" class="pinterest"></a>
+                    <a href="#" class="in"></a>
                 </div>
             </div>
-            <span / class="back-img">
         </div>
+        <img src="../assets/backgrounds/unsplash_o7BeB6LE04E.png" alt="contact us">
     </main>
 
     <footer class="footer">
@@ -280,8 +301,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="../slider.js"></script>
-    <script src="../script.js" type="module"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

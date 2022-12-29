@@ -925,96 +925,6 @@ header .inform .container-inform > div .img-header-contacts-location {
     line-height: 27px;
   }
 }
-.container-that-was-done {
-  display: flex;
-  margin-top: 56px;
-}
-.container-that-was-done > div {
-  display: flex;
-  margin-right: 30px;
-}
-.container-that-was-done > div p {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: capitalize;
-  color: #212529;
-  align-self: center;
-  margin-left: 10px;
-}
-.container-that-was-done > div p:last-child {
-  display: none;
-}
-.container-that-was-done .field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 7px;
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
-  border-radius: 35px;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  color: #212529;
-}
-
-@media (max-width: 560px) {
-  .container-that-was-done > div {
-    margin-right: 10px;
-  }
-}
-@media (max-width: 500px) {
-  .container-that-was-done {
-    justify-content: flex-end;
-    margin-top: 0;
-  }
-  .container-that-was-done p {
-    font-size: 10px;
-    line-height: 14px;
-  }
-  .container-that-was-done > div {
-    margin-right: 12px;
-    padding: 0 10px;
-    height: 32px;
-    background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
-    border-radius: 32px;
-  }
-  .container-that-was-done > div:nth-child(1) {
-    width: 140px;
-  }
-  .container-that-was-done > div:nth-child(2) {
-    width: 133px;
-  }
-  .container-that-was-done > div .field {
-    padding: 0;
-    background: none;
-    font-size: 12px;
-    line-height: 16px;
-    width: unset;
-    height: unset;
-  }
-  .container-that-was-done > div p {
-    display: flex;
-    font-size: 10px;
-    line-height: 14px;
-    margin-left: 8px;
-  }
-  .container-that-was-done > div p:nth-child(2) {
-    display: none;
-  }
-  .container-that-was-done > div p:last-child {
-    display: flex;
-  }
-  .container-that-was-done > div:last-child {
-    display: none;
-  }
-}
 body {
   height: 100%;
 }
@@ -1039,671 +949,6 @@ main {
 @media (max-width: 500px) {
   main {
     padding: 50px 0;
-  }
-}
-main .time-of-companys-existence-container {
-  display: flex;
-  flex-direction: column;
-}
-main .time-of-companys-existence-container .time-of-companys-existence {
-  display: flex;
-  justify-content: space-between;
-  margin: 100px 255px 60px 255px;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .images {
-  width: 49%;
-  position: relative;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-  width: 65.2%;
-  height: 83%;
-  max-height: 706px;
-  background: #00730C;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
-  position: absolute;
-  max-width: 88%;
-  max-height: 87.1%;
-  background: #C4C4C4;
-  top: 36px;
-  left: 24px;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 img {
-  width: 100%;
-  height: 100%;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-  border-radius: 10px;
-  max-width: 65.7%;
-  max-height: 36%;
-  position: absolute;
-  bottom: 6.25%;
-  left: 34.3%;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 img {
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp {
-  width: 49%;
-  display: flex;
-  flex-direction: column;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf {
-  margin: 45px 0 50px 0;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 800;
-  font-size: calc((1vw + 1vh) * 1.5);
-  line-height: calc((1vw + 1vh) * 2);
-  color: #212529;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 span {
-  color: #00730C;
-}
-main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc((1vw + 1vh) * 0.53);
-  line-height: calc((1vw + 1vh) * 0.9);
-  color: #676767;
-  margin-top: 30px;
-}
-
-.container-our-goals-functions {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.container-our-goals-functions div {
-  position: relative;
-  width: 47.8%;
-  height: 97px;
-  padding-left: 18.4%;
-}
-.container-our-goals-functions div:nth-child(1)::before {
-  background-image: url(../assets/home-page-02/Our-Mission.png);
-}
-.container-our-goals-functions div:nth-child(2)::before {
-  background-image: url(../assets/home-page-02/Our-Vision.png);
-}
-.container-our-goals-functions div:nth-child(3)::before {
-  background-image: url(../assets/home-page-02/Supporting.png);
-}
-.container-our-goals-functions div:nth-child(4)::before {
-  background-image: url(../assets/home-page-02/Clients-Trust.png);
-}
-.container-our-goals-functions div::after {
-  content: "";
-  position: absolute;
-  width: 67px;
-  height: 67px;
-  background: #00730C;
-  border-radius: 50%;
-  left: 30px;
-  top: 15px;
-  z-index: 10;
-}
-.container-our-goals-functions div::before {
-  content: "";
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
-  top: 24px;
-  left: 38px;
-  z-index: 15;
-}
-.container-our-goals-functions div a {
-  position: relative;
-  top: 35%;
-  text-decoration: none;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc((1vw + 1vh) * 0.8);
-  line-height: calc((1vw + 1vh) * 1.1);
-  text-transform: capitalize;
-  color: #212529;
-  cursor: pointer;
-}
-
-@media (min-width: 1918px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: -7.25%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    max-width: 500px;
-  }
-}
-@media (max-width: 1917px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: -2.25%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions {
-    gap: 15px;
-  }
-}
-@media (max-width: 1805px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: 2%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    max-height: 606px;
-  }
-}
-@media (max-width: 1700px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div {
-    padding-left: 22%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: 13%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    max-height: 556px;
-  }
-}
-@media (max-width: 1570px) {
-  main .time-of-companys-existence-container .time-of-companys-existence {
-    margin-bottom: 0;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    max-height: 506px;
-  }
-}
-@media (max-width: 1515px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: 23%;
-  }
-}
-@media (max-width: 1460px) {
-  main .time-of-companys-existence-container .time-of-companys-existence {
-    margin: 100px 115px 60px 115px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: -10%;
-  }
-}
-@media (max-width: 1430px) {
-  main .time-of-companys-existence-container .hide-still-1450px .container-our-goals-functions {
-    margin-top: 120px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
-    font-size: calc((1vh + 1vw) * 1.3);
-    line-height: calc((1vh + 1vw) * 1.7);
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: -12%;
-  }
-}
-@media (max-width: 1350px) {
-  main .time-of-companys-existence-container .hide-still-1450px .container-our-goals-functions {
-    margin-top: 40px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence {
-    margin-bottom: 0;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
-    font-size: calc((1vh + 1vw) * 1.3);
-    line-height: calc((1vh + 1vw) * 1.7);
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: 2%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    max-height: 526px;
-  }
-}
-@media (max-width: 1240px) {
-  main .time-of-companys-existence-container .time-of-companys-existence {
-    flex-direction: column;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp {
-    width: 100%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .btn-more {
-    align-self: center;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 60px 0 0 0;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
-    font-size: 45px;
-    line-height: 61px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf p {
-    font-size: 16px;
-    line-height: 28px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions {
-    margin-top: 40px;
-    width: 100%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div {
-    display: flex;
-    justify-content: center;
-    width: 230px;
-    height: 140px;
-    padding: 15px;
-    background: #FFFFFF;
-    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-    border-radius: 5px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div::after {
-    top: unset;
-    left: unset;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div::before {
-    left: unset;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div a {
-    align-self: flex-end;
-    text-align: center;
-    top: unset;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 150px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
-    width: 40%;
-    height: 450px;
-    left: 25%;
-    max-height: none;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    width: 37%;
-    bottom: -20.25%;
-    left: 50%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    width: 37%;
-    height: 386px;
-    max-height: unset;
-  }
-}
-@media (max-width: 1100px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images {
-    justify-content: unset;
-    margin-left: 13%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
-    width: 50%;
-    left: 5%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    left: 25%;
-    bottom: -30%;
-  }
-}
-@media (max-width: 960px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div a {
-    font-size: 14px;
-    line-height: 19px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images {
-    justify-content: unset;
-    margin-left: 0;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
-    width: 55%;
-    left: 5%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    left: 35%;
-    bottom: -40%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    width: 43%;
-    height: 386px;
-    max-height: unset;
-  }
-}
-@media (max-width: 840px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images {
-    justify-content: unset;
-    margin-left: 0;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
-    width: 65%;
-    left: 5%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    left: 45%;
-    bottom: -40%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    width: 53%;
-    height: 386px;
-    max-height: unset;
-  }
-}
-@media (max-width: 767px) {
-  main .time-of-companys-existence-container .time-of-companys-existence {
-    margin: 100px 60px 60px 60px;
-  }
-}
-@media (max-width: 660px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
-    width: 80%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    width: 50%;
-    left: 50%;
-  }
-}
-@media (max-width: 500px) {
-  main .time-of-companys-existence-container .time-of-companys-existence {
-    margin: 50px 15px 0 15px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images div:first-child {
-    width: 188px;
-    height: 293px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-1 {
-    max-width: unset;
-    width: 291px;
-    height: 358px;
-    left: 12px;
-    top: 12px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    max-width: unset;
-    max-height: unset;
-    width: 241px;
-    height: 162px;
-    bottom: -170px;
-    left: 100px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf h3 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    font-weight: 700;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf p {
-    margin-top: 15px;
-    font-size: 14px;
-    line-height: 22px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div {
-    width: 162px;
-    height: 94px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div::after {
-    width: 40px;
-    height: 40px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div::before {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    top: 20px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .container-our-goals-functions div a {
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-main .trained-staff {
-  display: flex;
-  flex-direction: column;
-  margin: 100px 255px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-main .trained-staff .descrb-btn-train-staff {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-main .trained-staff .descrb-btn-train-staff .descrb-train {
-  width: 68%;
-}
-main .trained-staff .descrb-btn-train-staff .descrb-train h3 {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 800;
-  font-size: calc((1vw + 1vh) * 1.5);
-  line-height: calc((1vw + 1vh) * 2);
-  color: #000000;
-  margin-bottom: 30px;
-}
-main .trained-staff .descrb-btn-train-staff .descrb-train h3 span {
-  color: #00730C;
-}
-main .trained-staff .descrb-btn-train-staff .descrb-train p {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: calc((1vw + 1vh) * 0.6);
-  line-height: calc((1vw + 1vh) * 0.9);
-  color: #676767;
-}
-main .trained-staff .descrb-btn-train-staff div:nth-child(2) {
-  align-self: flex-end;
-  margin-bottom: 8px;
-}
-main .trained-staff .blocks-train-staff {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] {
-  max-width: 330px;
-  max-height: 408px;
-  background: #C4C4C4;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-}
-main .trained-staff .blocks-train-staff [class*=block-personal]:nth-child(1) {
-  background-image: url(../assets/backgrounds/beautiful-woman-apron-posing-among-flowers-orangery.png);
-}
-main .trained-staff .blocks-train-staff [class*=block-personal]:nth-child(2) {
-  background-image: url(../assets/backgrounds/gardeners-with-plants-beautiful-garden-center.png);
-}
-main .trained-staff .blocks-train-staff [class*=block-personal]:nth-child(3) {
-  background-image: url(../assets/backgrounds/young-beautiful-florist-posing-smiling-among-flowers.png);
-}
-main .trained-staff .blocks-train-staff [class*=block-personal]:nth-child(4) {
-  background-image: url(../assets/backgrounds/portrait-happy-professional-gardener-holding-flowerpot-watering-can.png);
-}
-main .trained-staff .blocks-train-staff [class*=block-personal]:hover [class*=inner-block] {
-  margin-top: 0px;
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] [class*=inner-block] {
-  margin-top: 318px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 27px;
-  height: 408px;
-  background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
-  border-radius: 10px;
-  transition: margin-top 0.5s;
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] [class*=inner-block] h4 {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  text-transform: capitalize;
-  color: #FFFFFF;
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] [class*=inner-block] p {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] .links-member-of-pers {
-  display: flex;
-  gap: 25px;
-  margin-top: 20px;
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] .links-member-of-pers a {
-  width: 30px;
-  height: 30px;
-  display: block;
-  text-decoration: none;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] .links-member-of-pers a:nth-child(1) {
-  background-image: url(../assets/home-page-02/Tr-Google.png);
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] .links-member-of-pers a:nth-child(2) {
-  background-image: url(../assets/home-page-02/Tr-facebook.png);
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] .links-member-of-pers a:nth-child(3) {
-  background-image: url(../assets/home-page-02/Tr-twitter.png);
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] .links-member-of-pers a:nth-child(4) {
-  background-image: url(../assets/home-page-02/pinterest.png);
-}
-main .trained-staff .blocks-train-staff [class*=block-personal] .links-member-of-pers a:nth-child(5) {
-  background-image: url(../assets/home-page-02/Tr-linkedin.png);
-}
-main .trained-staff .swiper-pagination {
-  display: none;
-  justify-content: center;
-  position: static;
-  margin-top: 30px;
-  width: 100%;
-}
-main .trained-staff .swiper-pagination [class*=swiper-pagination-bullet] {
-  margin-right: 12px;
-  width: 20px;
-  height: 6px;
-  background: #00730C;
-  border-radius: 8px;
-}
-main .trained-staff .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 50px;
-  height: 6px;
-  background: #00730C;
-  border-radius: 8px;
-  transition: all 0.6s cubic-bezier(0.5, 1, 0.32, 1);
-}
-
-@media (max-width: 1460px) {
-  main .trained-staff {
-    margin: 100px 115px;
-  }
-}
-@media (max-width: 1240px) {
-  main .trained-staff .descrb-btn-train-staff {
-    flex-direction: column;
-  }
-  main .trained-staff .descrb-btn-train-staff .descrb-train {
-    text-align: center;
-    width: 100%;
-  }
-  main .trained-staff .descrb-btn-train-staff .descrb-train h3 {
-    font-size: 45px;
-    line-height: 61px;
-  }
-  main .trained-staff .descrb-btn-train-staff .descrb-train p {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  main .trained-staff .descrb-btn-train-staff .btn-more {
-    align-self: center !important;
-  }
-}
-@media (max-width: 767px) {
-  main .trained-staff {
-    margin: 100px 60px;
-  }
-  main .trained-staff .slider-train-container {
-    width: 100%;
-  }
-  main .trained-staff .slider-train-container .slider-train {
-    width: 100%;
-    max-width: 100%;
-    min-height: 0;
-    min-width: 0;
-  }
-}
-@media (max-width: 500px) {
-  main .trained-staff {
-    margin: 50px 15px;
-  }
-  main .trained-staff .descrb-btn-train-staff .descrb-train h3 {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    margin-bottom: 15px;
-  }
-  main .trained-staff .descrb-btn-train-staff .descrb-train p {
-    font-size: 14px;
-    line-height: 22px;
-    margin-bottom: 30px;
-  }
-  main .trained-staff .descrb-btn-train-staff .btn-more {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  main .trained-staff .slider-train-container {
-    width: 345px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  main .trained-staff .slider-train-container .slider-train {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  main .trained-staff .slider-train-container .slider-train .blocks-train-staff {
-    flex-wrap: unset;
-    gap: unset;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    position: relative;
-    overflow: hidden;
-  }
-  main .trained-staff .slider-train-container .slider-train .blocks-train-staff [class*=block-personal] {
-    max-width: unset;
-    max-height: unset;
-    width: 345px;
-    height: 343px;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  main .trained-staff .slider-train-container .slider-train .blocks-train-staff [class*=block-personal] [class*=inner-block] {
-    height: 343px;
-    margin-top: 280px;
-  }
-  main .trained-staff .slider-train-container .slider-train .blocks-train-staff [class*=block-personal]:hover [class*=inner-block] {
-    margin-top: 0;
-  }
-  main .trained-staff .slider-switchers {
-    display: flex;
-    width: 100% !important;
   }
 }
 footer {
@@ -2312,330 +1557,113 @@ footer .bottom-of-footer .main-block-footer .main-inform-footer .popular-service
     line-height: 19px;
   }
 }
-main h1, main h2 {
-  text-align: center;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 45px;
-  line-height: 61px;
-  color: #212529;
-  margin-bottom: 50px;
-}
-main h1:first-child {
-  margin-bottom: -50px;
-}
-main h2 {
-  text-align: left;
-  font-weight: 700;
-}
-main .descr-missions {
+main {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin: 0 255px;
+  padding-top: 0;
+  padding-bottom: 320px;
 }
-main .descr-missions .goal p:last-child {
-  margin-bottom: 0;
-}
-main div h2, main div p {
-  margin-bottom: 30px;
-}
-main div p {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #676767;
-}
-main div p:first-child {
-  margin-top: 30px;
-}
-main div p:last-child {
-  margin-bottom: 50px;
-}
-main .our-skills {
-  margin: 100px 255px;
-  display: flex;
-  justify-content: space-between;
-}
-main .our-skills h3 {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 61px;
-  color: #212529;
-  margin-bottom: 30px;
-}
-main .our-skills > p {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #676767;
-}
-main .our-skills .skills-descr {
-  padding: 100px 0;
-  width: 45%;
-}
-main .our-skills .skills-descr .skill-bars p {
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-main .our-skills .skills-descr .skill-bars .skill-bar {
-  margin-bottom: 23px;
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar {
-  width: 100%;
-  height: 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.18);
-  border-radius: 21px;
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .filling-bar {
-  position: relative;
-  top: 2px;
-  left: 2px;
-  background: #00730C;
-  border-radius: 8px;
-  height: 16px;
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .filling-bar::after {
+main .container {
+  top: 215px;
   position: absolute;
-  right: 0;
-  top: -35px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
-  color: #000000;
+  max-width: 1200px;
+  max-height: 850px;
+  margin: 0 15%;
+  background: linear-gradient(60deg, rgb(195, 223, 197) 15%, rgb(247, 247, 233) 54%, rgb(195, 223, 197) 92%);
+  box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.2);
 }
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .garden-care {
-  width: 85%;
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .garden-care::after {
-  content: "85%";
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .lawn-care {
-  width: 75%;
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .lawn-care::after {
-  content: "75%";
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .tree-plantation {
-  width: 80%;
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .tree-plantation::after {
-  content: "80%";
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .pests-weeds-control {
-  width: 90%;
-}
-main .our-skills .skills-descr .skill-bars .skill-bar .bar .pests-weeds-control::after {
-  content: "90%";
-}
-main .our-skills .skills-img {
-  display: flex;
-  position: relative;
-  width: 45%;
-}
-main .our-skills .skills-img div {
-  background-color: darkgreen;
-  top: 0;
-  right: 0;
-  width: 70%;
-  height: 92%;
-  position: absolute;
-  border-radius: 8px;
-}
-main .our-skills .skills-img img {
-  align-self: flex-end;
-  position: relative;
-  height: 97%;
-  width: 96%;
+main .container img {
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 8px;
+  width: 100%;
+  height: 273px;
 }
-main .trained-staff {
-  margin-bottom: 0;
+main .container img:nth-child(2) {
+  display: none;
 }
-
-.container-that-was-done {
+main .container .description-block {
+  padding: 55px 67px 0 67px;
+}
+main .container .description-block h1, main .container .description-block p {
+  font-family: "Nunito";
+  font-style: normal;
+  text-align: center;
+}
+main .container .description-block h1 {
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 106px;
+  color: #212529;
+  margin-bottom: 20px;
+}
+main .container .description-block p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #676767;
+}
+main .container div:last-child {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-end;
 }
-.container-that-was-done > div {
-  margin-bottom: 10px;
-}
-.container-that-was-done > div > p {
-  margin-bottom: 0;
+main .container div:last-child span {
+  width: 210px;
+  height: 100px;
+  background: url(../assets/backgrounds/garden.png) no-repeat center/cover;
+  margin-top: 5px;
 }
 
-@media (max-width: 1470px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: 33%;
+@media (max-width: 960px) {
+  main {
+    padding-bottom: 450px;
   }
 }
-@media (max-width: 1460px) {
-  main .descr-missions {
-    margin: 100px 115px 0 115px;
+@media (max-width: 780px) {
+  main .container .description-block {
+    padding: 25px 15px;
   }
-  main .our-skills {
-    margin: 0 115px;
+  main .container .description-block h1 {
+    font-size: 54px;
   }
-  main .our-skills .skills-img {
-    width: 50%;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: 3%;
+  main .container .description-block p {
+    font-size: 20px;
   }
 }
-@media (max-width: 1300px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: 13%;
+@media (max-width: 600px) {
+  main {
+    padding-bottom: 220px;
   }
-}
-@media (max-width: 1240px) {
-  .container-that-was-done {
-    margin-top: 30px;
+  main .container {
+    margin: 0 14.5px;
   }
-  main div p:last-child {
-    margin-bottom: 30px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: -15%;
-  }
-  main .our-skills .skills-descr {
-    width: 100%;
-  }
-  main .our-skills .skills-img {
+  main .container img:nth-child(1) {
     display: none;
   }
-  main .trained-staff {
-    margin-top: 0;
+  main .container img:nth-child(2) {
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
-}
-@media (max-width: 1110px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: -30%;
+  main .container .description-block {
+    padding-top: 0;
+    padding-bottom: 0;
   }
-}
-@media (max-width: 840px) {
-  main .time-of-companys-existence-container .time-of-companys-existence .images .img-compn-exstnc-2 {
-    bottom: -40%;
+  main .container .description-block h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  main .container .description-block p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  main .container div:last-child span {
+    background: url(../assets/backgrounds/sheet.svg) no-repeat center/cover;
+    width: 90px;
+    height: 70px;
   }
 }
 @media (max-width: 500px) {
-  .container-that-was-done {
-    display: flex;
-    flex-direction: column;
-    justify-content: unset;
-    margin-top: 56px;
-  }
-  .container-that-was-done > div {
-    display: flex;
-    position: relative;
-    margin: 0 30px 15px 0;
-    border-radius: unset;
-    height: unset;
-    background: unset;
-    padding: unset;
-  }
-  .container-that-was-done > div:nth-child(1) p {
-    right: -40px;
-  }
-  .container-that-was-done > div:nth-child(2) p {
-    right: -34px;
-  }
-  .container-that-was-done > div:nth-child(3) {
-    display: flex;
-  }
-  .container-that-was-done > div:nth-child(3) p {
-    position: static;
-    margin: 0px 0 0 15px;
-  }
-  .container-that-was-done > div p {
-    position: absolute;
-    top: 14px;
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: capitalize;
-    color: #212529;
-  }
-  .container-that-was-done > div .field {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 15px 7px;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
-    border-radius: 35px;
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    color: #212529;
-  }
-  main h1 {
-    font-size: 28px;
-    line-height: 38px;
-  }
-  main h1 span {
-    color: #00730C;
-  }
-  main h1:first-child {
-    position: relative;
-    margin-bottom: 0px;
-  }
-  main h1:first-child::after {
-    position: absolute;
-    top: -35px;
-    left: 43%;
-    content: "About Us";
-    font-family: "Nunito";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    color: #212529;
-  }
-  main .our-skills {
-    margin: 0 15px;
-  }
-  main .our-skills .skills-descr {
-    padding: 50px 0 30px;
-  }
-  main .our-skills h3 {
-    font-size: 28px;
-    line-height: 38px;
-  }
-  main .our-skills p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  main .descr-missions {
-    margin: 50px 15px 0 15px;
-  }
-  main .time-of-companys-existence-container .time-of-companys-existence .about-our-exp .descr-inf {
-    margin-top: 0;
-  }
-  main .trained-staff .descrb-btn-train-staff .descrb-train {
-    text-align: unset;
+  main {
+    padding-bottom: 260px;
   }
 }/*# sourceMappingURL=style.css.map */

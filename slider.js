@@ -160,3 +160,21 @@ if (document.querySelector(".slider-projects")) {
     },
   });
 }
+
+// slider projects related
+
+if (document.querySelector(".slider-related-projects")) {
+  new Swiper(".slider-related-projects", {
+    slidesPerView: 4,
+    slidesPerGroup: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 8000,
+      stopOnLastSlide: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}

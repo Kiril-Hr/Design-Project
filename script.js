@@ -1,3 +1,4 @@
+import { articles, articlesRelated } from "./modules/moduleArticles.mjs";
 /////////////////////////////// - header contacts
 const activeTextEmailHeader = document.querySelector(
   ".img-header-contacts-email"
@@ -7,9 +8,6 @@ const activeTextNumberHeader = document.querySelector(
 );
 const activeTextLocationHeader = document.querySelector(
   ".img-header-contacts-location"
-);
-const activeHeaderContactsElement = document.querySelectorAll(
-  ".element-header-text"
 );
 const activeEmail = document.querySelector("#header-contacts-1");
 const activeNumber = document.querySelector("#header-contacts-2");
@@ -134,8 +132,68 @@ noHoverArcIns.forEach((item) => {
 
 // project slider
 
+const wrapperOfPagesForArticles = document.querySelector(
+  ".slider-wrapper-projects"
+);
+
+if (wrapperOfPagesForArticles) {
+  const addArticles = (arr) => {
+    if (window.innerWidth > 1500) {
+      let countPages = Math.ceil(arr.length / 8);
+      let arrCountForOddQtyOfArticles = arr.map((el) => 1);
+      const arrForPages = [];
+      const arrForRowInPage = [];
+      let arrForTraversingArticles = JSON.parse(JSON.stringify(arr));
+      let count = -1;
+      for (let i = 0; i < countPages; i++) {
+        count += 1;
+        let page = document.createElement("div");
+        page.setAttribute("class", "swiper-slide");
+        page.id = `swiper-slide${i}`;
+        arrForPages[i] = page.id;
+        wrapperOfPagesForArticles.append(page);
+        for (let j = 0; j < 2; j++) {
+          let row = document.createElement("div");
+          row.setAttribute("class", "row");
+          row.id = `row${j + i + count}`;
+          arrForRowInPage[j + i + count] = row.id;
+          document.getElementById(arrForPages[i]).append(row);
+          for (let k = 0; k < 4; k++) {
+            if (arrCountForOddQtyOfArticles.length === 0) {
+              break;
+            }
+            document.getElementById(
+              arrForRowInPage[j + i + count]
+            ).innerHTML += `
+            <div class="container-shadow">
+              <div class="slide-project">
+                <div class="img">
+                    <img src=${arrForTraversingArticles[k].img} alt="project">
+                </div>
+                <div class="inner-block">
+                    <h3>${arrForTraversingArticles[k].chapter}</h3>
+                    <p>${arrForTraversingArticles[k].description}</p>
+                    <div><a href=${arrForTraversingArticles[k].link} class="btn-read"></a></div>
+                </div>
+              </div>
+            </div>
+            `;
+            if (k === 3) {
+              arrForTraversingArticles.shift();
+              arrForTraversingArticles.shift();
+              arrForTraversingArticles.shift();
+              arrForTraversingArticles.shift();
+            }
+            arrCountForOddQtyOfArticles.pop();
+          }
+        }
+      }
+    }
+  };
+  addArticles(articles);
+}
+
 const slideProject = document.querySelectorAll(".container-shadow");
-const innerBlock = document.querySelectorAll(".inner-block");
 const innerBlockP = document.querySelectorAll(".inner-block p");
 
 const CutBlock = () => {
@@ -144,10 +202,12 @@ const CutBlock = () => {
 
   innerBlockP.forEach((item) => {
     let innerText = item.outerText;
-    if (innerText.length > 40) {
+    if (innerText.length > 65) {
       let innerCutText = innerText.slice(0, 65).concat(" ...");
       item.textContent = innerCutText;
       descrOfProjCut.push(innerCutText);
+    } else {
+      descrOfProjCut.push(innerText);
     }
     descrOfProj.push(innerText);
   });
@@ -164,3 +224,5 @@ const CutBlock = () => {
   });
 };
 CutBlock();
+
+// sort buttons in project slider
