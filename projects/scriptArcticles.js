@@ -359,4 +359,3 @@ if (wrapperOfPagesForArticlesRelated) {
 showArticlesRelated()
 
 CutBlock();
-

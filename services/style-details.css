@@ -2510,7 +2510,148 @@ main .working-process .blocks-work-proc [class*=block-work-proc-] {
   height: 282px;
 }
 
+@media (max-width: 1920px) {
+  main .block-inform {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  main .block-inform .options-descriptions .option-description img {
+    max-width: unset;
+    min-width: 305px;
+  }
+  main .block-inform .options-descriptions .advantages .images-advantages {
+    justify-content: space-evenly;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #212529;
+  }
+  main .block-inform .options-descriptions .advantages .images-advantages img {
+    margin-bottom: 0;
+    min-width: 305px;
+  }
+  main .block-inform .aside-inform {
+    display: flex;
+    justify-content: center;
+    gap: 30px 30px;
+    flex-wrap: wrap;
+  }
+  main .block-inform .aside-inform .service,
+main .block-inform .aside-inform .brochure,
+main .block-inform .aside-inform .more-about-us {
+    max-width: 550px;
+    flex-grow: 1;
+  }
+  main .block-inform .aside-inform .service {
+    max-width: unset;
+    flex-grow: 2;
+    width: 100%;
+  }
+  main .block-inform .aside-inform .service .service-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  main .block-inform .aside-inform .service .service-options [class*=option] {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 305px;
+    flex-grow: 1;
+  }
+  main .block-inform .aside-inform .brochure .download-info-company-newest a {
+    width: 100%;
+  }
+}
+@media (max-width: 960px) {
+  main {
+    padding-bottom: 160px;
+  }
+}
 @media (max-width: 500px) {
+  main {
+    padding: 0 0 50px 0;
+  }
+  main .block-inform {
+    padding: 50px 15px;
+    flex-direction: column;
+  }
+  main .block-inform .options-descriptions h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  main .block-inform .options-descriptions h2 span {
+    color: #00730C;
+  }
+  main .block-inform .options-descriptions p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  main .block-inform .options-descriptions .option-description {
+    margin-bottom: 50px;
+  }
+  main .block-inform .options-descriptions .option-description img {
+    margin: 0 0 30px 0;
+    border-radius: 5px;
+  }
+  main .block-inform .options-descriptions .advantages .images-advantages {
+    padding-bottom: 0;
+    border-bottom: unset;
+  }
+  main .block-inform .options-descriptions .advantages .images-advantages img {
+    margin-bottom: 0;
+    min-width: 162px;
+    max-width: 212px;
+    height: 110px;
+    min-width: unset;
+    min-height: unset;
+    border-radius: 5px;
+  }
+  main .block-inform .aside-inform .service,
+main .block-inform .aside-inform .brochure,
+main .block-inform .aside-inform .more-about-us {
+    margin-bottom: 0;
+  }
+  main .block-inform .aside-inform .service h3,
+main .block-inform .aside-inform .brochure h3,
+main .block-inform .aside-inform .more-about-us h3 {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+  main .block-inform .aside-inform .service p,
+main .block-inform .aside-inform .brochure p,
+main .block-inform .aside-inform .more-about-us p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  main .block-inform .aside-inform .brochure .download-info-company-newest a {
+    background: #FFF8F1;
+  }
+  main .block-inform .aside-inform .service {
+    padding: 30px 20px;
+  }
+  main .block-inform .aside-inform .service .service-options {
+    gap: 20px;
+  }
+  main .block-inform .aside-inform .service .service-options [class*=option] {
+    height: 46px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  main .block-inform .aside-inform .more-about-us .number {
+    justify-content: center;
+  }
+  main .block-inform .aside-inform .more-about-us .number p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-left: 20px;
+  }
+  main .block-inform .aside-inform .more-about-us .number p::after {
+    font-size: 14px;
+    line-height: 22px;
+    top: 35px;
+    left: 15px;
+  }
   main .working-process .blocks-work-proc [class*=block-work-proc-] {
     height: 152px;
   }
