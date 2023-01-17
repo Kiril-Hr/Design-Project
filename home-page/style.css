@@ -83,7 +83,7 @@ header .inform .change-lang .change-lang-btn::after {
   background-repeat: no-repeat;
   height: 7px;
   width: 12px;
-  top: 12px;
+  top: 10px;
   right: -17px;
   transition: all 0.3s ease-out;
 }
@@ -170,10 +170,9 @@ header .container-logo-menu .container-menu-btn .menu ul:last-child {
 }
 header .container-logo-menu .container-menu-btn .menu ul .submenu.activeMenuItem p {
   transform: rotate(180deg);
-  opacity: 1 !important;
 }
 header .container-logo-menu .container-menu-btn .menu ul .submenu.activeMenuItem > a {
-  color: white !important;
+  color: white;
 }
 header .container-logo-menu .container-menu-btn .menu ul .submenu.activeMenuItem [class*=submenu-] {
   margin: 0 0 10px 35px;
@@ -350,7 +349,7 @@ body.lock {
   border-top-right-radius: 0;
   width: 13.5px;
   top: 3.5px;
-  left: 2px;
+  left: 1px;
   transform: rotate(45deg);
 }
 .hb-menu.activeMenu::before {
@@ -371,10 +370,6 @@ body.lock {
 
 .activeMenu {
   display: block !important;
-}
-
-.deactivate-logo {
-  opacity: 0;
 }
 
 .white-color button {
@@ -443,8 +438,425 @@ body.lock {
   }
 }
 @media (max-width: 1280px) {
+  .activeMenu {
+    transform: translateX(0) !important;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu.activeMenu {
+    left: 0;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu {
+    padding: 0;
+    transition: all 0.5s cubic-bezier(0.16, 0.08, 0, 0.69);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    left: -100%;
+    top: 138px;
+    transform: translateX(-100%);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: #0C4B35;
+    z-index: 50;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
+    position: relative;
+    padding: 25px 15px 20px 15px;
+    margin-bottom: 123px;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.99;
+    margin-right: 0;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 30px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child a {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    margin: 0 20px 20px 0;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child .fb-mobile-menu {
+    background-image: url(../assets/home-page-02/facebook-hm-mobile.svg);
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child .in-mobile-menu {
+    background-image: url(../assets/home-page-02/linkedin-hm-mobile.svg);
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child .gplus-mobile-menu {
+    background-image: url(../assets/home-page-02/Google-hm-mobile.svg);
+    margin-top: 2px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child .tw-mobile-menu {
+    background-image: url(../assets/home-page-02/twitter-hm-mobile.svg);
+    margin-top: 2px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:last-child {
+    position: relative;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    opacity: 0.9;
+    color: #FFFFFF;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul > li:hover > a {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul:last-child {
+    margin-right: 0;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .menu-contacts-func {
+    display: block;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu.activeMenuItem a {
+    color: white;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu.activeMenuItem::after {
+    transform: rotate(0);
+    opacity: 1;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu {
+    position: relative;
+    margin-right: 0;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:first-child::after {
+    display: none;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 60px;
+    background: url(../assets/home-page-02/down-arrow-menu.svg) no-repeat center/cover;
+    transform: rotate(180deg);
+    width: 12px;
+    height: 7px;
+    opacity: 0.5;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu .submenu-2 {
+    max-height: unset;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2)::after {
+    left: 84px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4)::after {
+    left: 74px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5)::after {
+    left: 64px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6)::after {
+    left: 44px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu p {
+    display: none;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul li {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul a {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+  }
   .hb-menu {
     margin-right: 40px;
+  }
+}
+@media (max-height: 2400px) and (min-height: 900px) and (max-width: 1280px) and (min-width: 501px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
+    padding: 50px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu::after {
+    width: 18px;
+    height: 11px;
+    top: 20px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2)::after {
+    left: 112px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4)::after {
+    left: 102px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5)::after {
+    left: 84px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6)::after {
+    left: 60px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu.activeMenuItem [class*=submenu-] li {
+    width: 100%;
+    min-height: 40px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu.activeMenuItem [class*=submenu-] li a {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu,
+header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .menu-contacts-func {
+    min-height: 60px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu a,
+header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .menu-contacts-func a {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 52px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    position: absolute;
+    bottom: 40px;
+    left: 32%;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child a {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:last-child {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+@media (max-height: 1050px) and (min-height: 900px) and (max-width: 1280px) and (min-width: 501px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
+    padding: 30px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu.activeMenuItem [class*=submenu-] li {
+    width: 100%;
+    min-height: 40px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu.activeMenuItem [class*=submenu-] li a {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu,
+header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .menu-contacts-func {
+    min-height: 50px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu a,
+header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .menu-contacts-func a {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 42px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu::after {
+    width: 18px;
+    height: 11px;
+    top: 16px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2)::after {
+    left: 100px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4)::after {
+    left: 92px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5)::after {
+    left: 78px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6)::after {
+    left: 54px;
+  }
+}
+@media (max-height: 960px) and (min-height: 900px) and (max-width: 1280px) and (min-width: 501px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
+    padding: 30px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu.activeMenuItem [class*=submenu-] li {
+    width: 100%;
+    min-height: 30px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu.activeMenuItem [class*=submenu-] li a {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu,
+header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .menu-contacts-func {
+    min-height: 40px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu a,
+header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .menu-contacts-func a {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 42px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    position: absolute;
+    bottom: 30px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child a {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:last-child {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+@media (max-height: 899px) and (min-height: 750px) and (max-width: 1280px) and (min-width: 501px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
+    padding: 30px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    position: absolute;
+    bottom: 20px;
+    left: 34%;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child a {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu::after {
+    width: 16px;
+    height: 9px;
+    top: 14px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2)::after {
+    left: 78px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4)::after {
+    left: 72px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5)::after {
+    left: 60px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6)::after {
+    left: 44px;
+  }
+}
+@media (max-height: 749px) and (min-height: 560px) and (max-width: 1280px) and (min-width: 501px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
+    padding: 30px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    position: relative;
+    bottom: -80px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child a {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu::after {
+    width: 16px;
+    height: 9px;
+    top: 14px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2)::after {
+    left: 78px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4)::after {
+    left: 72px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5)::after {
+    left: 60px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6)::after {
+    left: 44px;
+  }
+}
+@media (max-height: 559px) and (max-width: 1280px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
+    padding: 10px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu.activeMenuItem [class*=submenu-] li {
+    width: 100%;
+    min-height: 20px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu.activeMenuItem [class*=submenu-] li a {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu,
+header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .menu-contacts-func {
+    min-height: 30px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .submenu a,
+header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .menu-contacts-func a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    position: relative;
+    bottom: -100px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child a {
+    width: 17px;
+    height: 17px;
+    background-size: cover;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:last-child {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
   }
 }
 @media (max-width: 1100px) {
@@ -465,41 +877,12 @@ body.lock {
     padding: 0 120px;
   }
 }
-@media (max-width: 960px) {
-  header .container-logo-menu .container-menu-btn .menu ul .menu-contacts-func {
-    display: none;
-  }
-  header .container-logo-menu .container-menu-btn .menu ul .submenu:nth-child(5) {
-    display: none;
-  }
-  header .container-logo-menu .container-menu-btn .menu ul .submenu:nth-child(6) {
-    display: none;
-  }
-  header .container-logo-menu .container-menu-btn .menu ul .submenu:nth-child(3) {
-    display: block;
-  }
-  header .container-logo-menu .container-menu-btn .menu ul .submenu .submenu-2 {
-    left: 0;
-    max-height: 150px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  header .container-logo-menu .container-menu-btn .menu ul .submenu .submenu-2 > li {
-    width: 115px;
-    margin-top: 0;
-    padding: 10px 10px 10px 0;
+@media (max-width: 960px) and (min-height: 750px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    left: 27%;
   }
 }
 @media (max-width: 840px) {
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
-    margin-right: 10px;
-  }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu {
-    margin-right: 30px;
-  }
   header .inform {
     padding: 0 80px;
   }
@@ -526,14 +909,14 @@ body.lock {
     top: 10px;
   }
 }
-@media (max-width: 660px) {
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu {
-    margin-right: 45px;
+@media (max-width: 750px) and (min-height: 750px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    left: 19%;
   }
 }
-@media (max-width: 560px) {
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu {
-    margin-right: 30px;
+@media (max-width: 620px) and (min-height: 750px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    left: 15%;
   }
 }
 @media (max-width: 500px) {
@@ -643,6 +1026,7 @@ header .inform .container-inform > div .img-header-contacts-location {
     left: 0;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu {
+    padding: 0;
     transition: all 0.5s cubic-bezier(0.16, 0.08, 0, 0.69);
     width: 100%;
     height: 100%;
@@ -650,12 +1034,13 @@ header .inform .container-inform > div .img-header-contacts-location {
     position: fixed;
     left: -100%;
     top: 123px;
+    background: #0C4B35;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu {
     position: relative;
     padding: 25px 15px 20px 15px;
     margin-bottom: 123px;
-    background: #0C4B35;
+    height: 100%;
     z-index: 0;
     opacity: 0.99;
     margin-right: 0;
@@ -664,7 +1049,8 @@ header .inform .container-inform > div .img-header-contacts-location {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-top: 125px;
+    bottom: -120px;
+    left: 0;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu div:first-child {
     display: flex;
@@ -723,35 +1109,22 @@ header .inform .container-inform > div .img-header-contacts-location {
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu .submenu-2 {
     max-height: unset;
   }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(1) p {
-    display: none;
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu::after {
+    width: 16px;
+    height: 9px;
+    top: 14px;
   }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2) p {
-    right: 75%;
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2)::after {
+    left: 78px;
   }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(3) {
-    display: none;
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4)::after {
+    left: 72px;
   }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4) p {
-    right: 77%;
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5)::after {
+    left: 60px;
   }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5) {
-    display: block;
-  }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5) p {
-    right: 80.5%;
-  }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6) {
-    display: block;
-  }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6) p {
-    right: 84.5%;
-  }
-  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu p {
-    top: 13px;
-    opacity: 0.7;
-    background-image: url(../assets/home-page-02/menu-mobile-arrow-down.png);
-    transition: all 0.2s ease-out;
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6)::after {
+    left: 44px;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul li {
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
@@ -782,6 +1155,28 @@ header .inform .container-inform > div .img-header-contacts-location {
     background-size: cover;
   }
 }
+@media (max-height: 559px) and (max-width: 500px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu .contacts-links-mobile-menu {
+    bottom: -80px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu::after {
+    width: 16px;
+    height: 9px;
+    top: 8px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2)::after {
+    left: 84px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4)::after {
+    left: 76px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5)::after {
+    left: 64px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6)::after {
+    left: 48px;
+  }
+}
 @media (max-width: 450px) {
   header .inform .change-lang .change-lang-list {
     left: -335px;
@@ -791,6 +1186,18 @@ header .inform .container-inform > div .img-header-contacts-location {
   }
 }
 @media (max-width: 420px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2) p {
+    right: 275px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4) p {
+    right: 285px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5) p {
+    right: 295px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6) p {
+    right: 310px;
+  }
   header .inform .change-lang .change-lang-list {
     left: -310px;
   }
@@ -799,6 +1206,18 @@ header .inform .container-inform > div .img-header-contacts-location {
   }
 }
 @media (max-width: 400px) {
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2) p {
+    right: 256px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4) p {
+    right: 264px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5) p {
+    right: 274px;
+  }
+  header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6) p {
+    right: 292px;
+  }
   header .inform .container-inform .location .element-header-text {
     padding: 0 15px;
     left: 0px;
@@ -816,18 +1235,18 @@ header .inform .container-inform > div .img-header-contacts-location {
     padding: 0 20px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(2) p {
-    right: 256px;
+    right: 236px;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(4) p {
-    right: 264px;
+    right: 244px;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(5) p {
-    right: 274px;
+    right: 254px;
   }
   header .container-logo-menu .container-menu-btn .container-scroll-mobile-menu .menu ul .submenu:nth-child(6) p {
-    right: 292px;
+    right: 272px;
   }
 }
 .container-that-was-done {
@@ -1392,6 +1811,7 @@ footer .bottom-of-footer .main-block-footer .main-inform-footer .popular-service
     align-items: center;
     flex-direction: column;
     padding: 30px 50px;
+    top: -90px;
   }
   footer .bottom-of-footer .solutions h4 {
     text-align: center;
@@ -2636,9 +3056,6 @@ main .img-propose-to-call .container-propose .img-propose button {
   }
 }
 @media (max-width: 767px) {
-  main .img-propose-to-call .container-propose .img-propose {
-    width: calc((1vh + 1vw) * 45);
-  }
   main .img-propose-to-call .container-propose .img-propose h4 {
     font-size: 27px;
     line-height: 39px;
@@ -2657,6 +3074,11 @@ main .img-propose-to-call .container-propose .img-propose button {
   }
   main .img-propose-to-call .container-propose .btn-call-us button {
     margin-right: 20px;
+  }
+}
+@media (max-width: 570px) {
+  main .img-propose-to-call .container-propose .img-propose {
+    width: calc((1vh + 1vw) * 34);
   }
 }
 @media (max-width: 500px) {

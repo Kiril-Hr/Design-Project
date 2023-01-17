@@ -63,6 +63,20 @@
         }
     }
 }
+@media(max-width: 1700px) {
+    .inform-about-page {
+        .container-position-inform {
+            margin: 0 10%;
+        }
+    }
+}
+@media(max-width: 1000px) {
+    .inform-about-page {
+        .container-position-inform {
+            margin: 0 7%;
+        }
+    }
+}
 @media(max-width: 500px) {
 
     .inform-about-page {

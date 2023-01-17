@@ -50,7 +50,6 @@ main {
         .img-propose-to-call {
             .container-propose {
                 .img-propose {
-                    width: calc($size * 45);
                     h4 {
                         font-size: 27px;
                         line-height: 39px;
@@ -80,6 +79,17 @@ main {
                     button {
                         margin-right: 20px;
                     }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 570px) {
+    main {
+        .img-propose-to-call {
+            .container-propose {
+                .img-propose {
+                    width: calc($size * 34);
                 }
             }
         }

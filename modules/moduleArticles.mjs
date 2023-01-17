@@ -1,7 +1,21 @@
 const articles = [
   {
     img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
+    chapter: "Landscape",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Lawn Care",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Planting",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
     link: "#",
@@ -15,7 +29,21 @@ const articles = [
   },
   {
     img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
+    chapter: "Landscape",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Planting",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Lawn Care",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
     link: "#",
@@ -29,7 +57,14 @@ const articles = [
   },
   {
     img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
+    chapter: "Planting",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Lawn Care",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
     link: "#",
@@ -43,7 +78,7 @@ const articles = [
   },
   {
     img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
+    chapter: "Landscape",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
     link: "#",
@@ -57,7 +92,21 @@ const articles = [
   },
   {
     img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
+    chapter: "Planting",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Landscape",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Planting",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
     link: "#",
@@ -71,7 +120,35 @@ const articles = [
   },
   {
     img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
+    chapter: "Lawn Care",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Landscape",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Planting",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Lawn Care",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
+    link: "#",
+  },
+  {
+    img: "../assets/backgrounds/two-hands-keep-plant.svg",
+    chapter: "Landscape",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
     link: "#",
@@ -85,49 +162,7 @@ const articles = [
   },
   {
     img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
-    link: "#",
-  },
-  {
-    img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
-    link: "#",
-  },
-  {
-    img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
-    link: "#",
-  },
-  {
-    img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
-    link: "#",
-  },
-  {
-    img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
-    link: "#",
-  },
-  {
-    img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
-    link: "#",
-  },
-  {
-    img: "../assets/backgrounds/two-hands-keep-plant.svg",
-    chapter: "Garden Care",
+    chapter: "Landscape",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s, when an unknown printer.",
     link: "#",

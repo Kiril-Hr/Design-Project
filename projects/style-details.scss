@@ -52,18 +52,27 @@ main {
                     img {
                         object-fit: cover;
                         max-width: 450px;
-                        max-height: 308px;
+                        height: 308px;
                         width: 100%;
-                        height: 100%;
-                        min-width: 450px;
-                        min-height: 308px;
                         margin-bottom: 30px;
                     }
                 }
                 .option-of-challenges {
                     padding-bottom: 30px;
                     p {
+                        position: relative;
+                        left: 35px;
                         margin-bottom: 15px;
+                        margin-right: 35px;
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            background: url(../assets/home-page-02/project-related-arrow-green.svg) no-repeat center;
+                            width: 20px;
+                            height: 16px;
+                            top: 2px;
+                            left: -35px;
+                        }
                         &:last-child {
                             margin-bottom: 0;
                         }
@@ -515,5 +524,331 @@ main {
         }
         
     }
+}
+
+@media(max-width: 1920px) {
+    main {
+        .block-inform {
+            flex-direction: column;
+            gap: 60px;
+            .main-inform {
+                > img {
+                    max-width: unset;
+                }
+                .project-challenges {
+                    .images-project-challenges {
+                        justify-content: space-evenly;
+
+                    }
+                }
+            } 
+            .aside-inform {
+                display: flex;
+                justify-content: center;
+                gap: 30px 30px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+@media(max-width: 1273px) {
+    main {
+        .block-inform {
+            .aside-inform {
+                .brochure {
+                    .download-info-company-newest {
+                        a {
+                            max-width: 390px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .project-information,
+                .brochure,
+                .more-about-us {
+                    max-width: 600px;
+                    width: 100%;
+                }
+            }
+        }
+    }
     
+}
+@media(max-width: 1140px) {
+    main {
+        .block-inform {
+            .main-inform {
+                .share-chapters {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px 30px;
+                    .chapters {
+                        flex-wrap: wrap;
+                        margin-right: 0;
+                    }
+                    .share-links {
+                        .links {
+                            gap: 30px;
+                        }
+                    }
+                }
+                .project-summery {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }   
+}
+@media(max-width: 1060px) {
+    main {
+        .slider-title {
+            .slider-related-projects {
+                .swiper-pagination {
+                    position: relative;
+                    display: inline-block;
+                    height: 40px;
+                    bottom: 20px;
+                    .swiper-pagination-bullet {
+                        display: inline-block;
+                        top: 10px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #00730C;
+                        border-radius: 50%;
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 960px) {
+    main {
+        .block-inform {
+            .main-inform {
+                > img {
+                    min-width: unset;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 700px) {
+    main {
+        .block-inform {
+            .main-inform {
+                .share-chapters {
+                    .share-links {
+                        .links {
+                            gap: 15px;
+                            flex-wrap: wrap;
+                            a {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+@media(max-width: 500px) {
+    main {
+        padding-bottom: 50px;
+        .block-inform {
+            padding-left: 0;
+            padding-right: 0;
+            .main-inform {
+                margin: 0 15px;
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                h2 {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                
+                > img {
+                    max-width: 470px;
+                    max-height: 250px;
+                    min-height: 180px;
+                    height: 100%;
+                }
+                .project-challenges {
+                    .images-project-challenges {
+                        img {
+                            width: 162px;
+                            height: 110px;
+                        }
+                    }
+                }
+                .share-chapters {
+                    flex-direction: column-reverse;
+                    .chapters {
+                        span {
+                            font-size: 12px;
+                            line-height: 16px;
+                            padding: 5px 15px;
+                            height: max-content;
+                            width: max-content;
+                        }
+                    }
+                    .share-links  {
+                        p {
+                            text-transform: unset;
+                            text-decoration: none;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                        }
+                        .links {
+                            gap: 20px;
+                            a {
+                                width: 30px;
+                                height: 30px;
+                                &::after {
+                                    width: 20px;
+                                    height: 20px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .aside-inform {
+                margin: 0 15px;
+                gap: 50px;
+                
+                .project-information,
+                .brochure,
+                .more-about-us {
+                    padding: 30px 20px;
+                    p {
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                    h3 {
+                        font-size: 20px;
+                        line-height: 27px;
+                    }
+                    h4 {
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                    margin-bottom: 0;
+                }
+                .more-about-us {
+                    background: #FFF8F1;
+                    .number {
+                        > p {
+                            color: #212529 !important;
+                            border-bottom: 1px solid #212529;
+                            &::after {
+                                font-size: 14px;
+                                line-height: 22px;
+                                color: #212529;
+                                top: 36px;
+                                left: 24px;
+                            }
+                        }
+
+                    }
+                }
+                .brochure {
+                    .download-info-company-newest {
+                        p {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: #0C4B35;
+                        }
+                        a {
+                            background: #FFF8F1;
+                        }
+                    }
+                }
+            }
+        } 
+        .slider-title {
+            > h3 {
+                margin-top: 50px;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 38px;
+                text-align: center;
+            }
+            .slider-related-projects {
+                padding-bottom: 50px;
+                margin: 0 15px 0 15px;
+                .slider-wrapper-related-projects {
+                    .swiper-slide {
+                        .row {
+                            .container-shadow {
+                                width: 202px;
+                                height: 248px;
+                                &:hover {
+                                    .slide-project {
+                                        .inner-block {
+                                            bottom: -10px;
+                                            h3 {
+                                                margin-bottom: 15px;
+                                            }
+                                            p {
+                                                height: 135px;
+                                            }
+                                            .btn-read {
+                                                &:after {
+                                                    width: 20px;
+                                                    height: 20px;
+                                                }
+                                                &:before {
+                                                    right: 4px;
+                                                    bottom: 7px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .slide-project {
+                                    .inner-block {
+                                        bottom: -80px;
+                                        h3 {
+                                            font-size: 18px;
+                                            line-height: 25px;
+                                        }
+                                        p {
+                                            font-size: 10px;
+                                            line-height: 14px;
+                                        }
+                                    }
+                                    .img {
+                                        height: 130px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination {
+                    display: inline-block;
+                    height: 30px;
+                    bottom: -20px;
+                    margin-top: 0;
+                    .swiper-pagination-bullet {
+                        display: inline-block;
+                        top: 10px;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #00730C;
+                        transform: scale(1);
+                        margin-right: 25px;
+                    }
+                    .swiper-pagination-bullet-active {
+                        box-shadow: 0px 0px 3px 5px rgb(0, 115, 12, 0.4);
+                    }
+                }
+            }
+        }
+    }
 }
