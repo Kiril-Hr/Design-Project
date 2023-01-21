@@ -196,36 +196,35 @@ const windowAdaptiveArticles = (array) => {
   
 windowAdaptiveArticles(articles)
 
-  const CutBlock = () => {
-    const slideProject = document.querySelectorAll(".container-shadow");
-    const innerBlockP = document.querySelectorAll(".inner-block p");
-    const descrOfProj = [];
-    const descrOfProjCut = [];
-  
-    innerBlockP.forEach((item) => {
-      let innerText = item.outerText;
-      if (innerText.length > 65) {
-        let innerCutText = innerText.slice(0, 65).concat(" ...");
-        item.textContent = innerCutText;
-        descrOfProjCut.push(innerCutText);
-      } else {
-        descrOfProjCut.push(innerText);
-      }
-      descrOfProj.push(innerText);
+const CutBlock = () => {
+  const slideProject = document.querySelectorAll(".container-shadow");
+  const innerBlockP = document.querySelectorAll(".inner-block p");
+  const descrOfProj = [];
+  const descrOfProjCut = [];
+
+  innerBlockP.forEach((item) => {
+    let innerText = item.outerText;
+    if (innerText.length > 65) {
+      let innerCutText = innerText.slice(0, 65).concat(" ...");
+      item.textContent = innerCutText;
+      descrOfProjCut.push(innerCutText);
+    } else {
+      descrOfProjCut.push(innerText);
+    }
+    descrOfProj.push(innerText);
+  });
+
+  slideProject.forEach((item, i) => {
+    item.addEventListener("mouseover", () => {
+      item.children[0].lastElementChild.children[1].textContent =
+        descrOfProj[i];
     });
-  
-    slideProject.forEach((item, i) => {
-      item.addEventListener("mouseover", () => {
-        item.children[0].lastElementChild.children[1].textContent =
-          descrOfProj[i];
-      });
-      item.addEventListener("mouseout", () => {
-        item.children[0].lastElementChild.children[1].textContent =
-          descrOfProjCut[i];
-      });
+    item.addEventListener("mouseout", () => {
+      item.children[0].lastElementChild.children[1].textContent =
+        descrOfProjCut[i];
     });
-  };
-  CutBlock();
+  });
+};
   
 
 // sort buttons in project slider
