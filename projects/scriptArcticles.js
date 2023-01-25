@@ -279,7 +279,7 @@ btnSort.forEach((btn) => {
         windowAdaptiveArticles(filteredArticles)
         CutBlock();
         showArticles()
-        let widthInnerContainer = wrapperOfPagesForArticles.offsetWidth / 0.92;
+        let widthInnerContainer = wrapperOfPagesForArticles.offsetWidth / 0.93;
         sliderProjects.setAttribute('style',`width: ${widthInnerContainer}px; ${styleWidthConst.maxW}; ${styleWidthConst.minW}`)
     })
 })
