@@ -10,6 +10,7 @@ main {
     margin: 0 255px;
     .form-contacts {
         display: flex;
+        justify-content: space-between;
         gap: 30px;
         .form-contact {
             h3 {
@@ -83,7 +84,8 @@ main {
         }
         .get-in-touch {
             padding: 40px 30px 50px;
-            width: 450px;
+            max-width: 450px;
+            width: 100%;
             height: max-content;
             background: #FFF8F1;
             border-radius: 5px;
@@ -108,7 +110,8 @@ main {
                 display: flex;
                 position: relative;
                 align-items: center;
-                width: 390px;
+                max-width: 390px;
+                width: 100%;
                 height: 64px;
                 background: #FFFFFF;
                 border-radius: 5px;
@@ -201,5 +204,178 @@ main {
         object-fit: cover;
         max-height: 422px;
         width: 100%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 25px #707070bd;
+    }
+}
+
+@media(max-width: 1920px) {
+    main {
+        .form-contacts {
+            .form-contact {
+                width: 100%;
+                form {
+                    .full-name,
+                    .contacts {
+                        input {
+                            max-width: 450px;
+                            min-width: 350px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+                    
+}
+@media(max-width: 1780px) {
+    main {
+        .form-contacts {
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            .form-contact {
+                form {
+                    .full-name,
+                    .contacts {
+                        input {
+                            max-width: unset;
+                            min-width: unset;
+                        }
+                    }
+                }
+            }
+            .get-in-touch {
+                max-width: unset;
+                p, h4 {
+                    text-align: center;
+                }
+                h4 {
+                    font-size: 38px;
+                    font-weight: 900;
+                }
+                .contact-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 20px;
+                }
+            }
+        }
+    }    
+}
+@media(max-width: 1430px) {
+    main {
+        margin: 0 110px;
+        .form-contacts {
+            .form-contact {
+                form {
+                    .full-name,
+                    .contacts {
+                        gap: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 900px) {
+    main {
+        margin: 0 60px;
+    }
+}
+
+@media(max-width: 650px) {
+    main {
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 500px) {
+    main {
+        margin: 0 15px;
+        .form-contacts {
+            .form-contact {
+                form {
+                    input,
+                    textarea {
+                        border-radius: 6px;
+                    }
+                    .full-name,
+                    .contacts {
+                        gap: 30px;
+                        flex-direction: column;
+                    }
+                }
+            }
+            .get-in-touch {
+                padding: 30px 20px;
+                p, h4 {
+                    text-align: unset;
+                }
+                .contact-container {
+                    .contact {
+                        max-width: unset;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+                .links {
+                    gap: 20px;
+                    a {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 0;
+                        &::after {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 430px) {
+    main {
+        margin: 0 15px;
+        .form-contacts {
+            .form-contact {
+                h3 {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+            .get-in-touch {                
+                h4 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 27px;
+                    margin-bottom: 15px;
+                }
+                .contact-container {
+                    .contact {
+                        padding-left: 20px;
+                        i {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 19px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

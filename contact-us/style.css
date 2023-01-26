@@ -1992,6 +1992,7 @@ main {
 }
 main .form-contacts {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
 }
 main .form-contacts .form-contact h3 {
@@ -2080,7 +2081,8 @@ main .form-contacts .form-contact form .container-btn button {
 }
 main .form-contacts .get-in-touch {
   padding: 40px 30px 50px;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -2108,7 +2110,8 @@ main .form-contacts .get-in-touch .contact {
   display: flex;
   position: relative;
   align-items: center;
-  width: 390px;
+  max-width: 390px;
+  width: 100%;
   height: 64px;
   background: #FFFFFF;
   border-radius: 5px;
@@ -2198,4 +2201,135 @@ main img {
      object-fit: cover;
   max-height: 422px;
   width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px rgba(112, 112, 112, 0.7411764706);
+}
+
+@media (max-width: 1920px) {
+  main .form-contacts .form-contact {
+    width: 100%;
+  }
+  main .form-contacts .form-contact form .full-name input,
+main .form-contacts .form-contact form .contacts input {
+    max-width: 450px;
+    min-width: 350px;
+    width: 100%;
+  }
+}
+@media (max-width: 1780px) {
+  main .form-contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  main .form-contacts .form-contact form .full-name input,
+main .form-contacts .form-contact form .contacts input {
+    max-width: unset;
+    min-width: unset;
+  }
+  main .form-contacts .get-in-touch {
+    max-width: unset;
+  }
+  main .form-contacts .get-in-touch p, main .form-contacts .get-in-touch h4 {
+    text-align: center;
+  }
+  main .form-contacts .get-in-touch h4 {
+    font-size: 38px;
+    font-weight: 900;
+  }
+  main .form-contacts .get-in-touch .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 1430px) {
+  main {
+    margin: 0 110px;
+  }
+  main .form-contacts .form-contact form .full-name,
+main .form-contacts .form-contact form .contacts {
+    gap: 15px;
+  }
+}
+@media (max-width: 900px) {
+  main {
+    margin: 0 60px;
+  }
+}
+@media (max-width: 650px) {
+  main {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    margin: 0 15px;
+  }
+  main .form-contacts .form-contact form input,
+main .form-contacts .form-contact form textarea {
+    border-radius: 6px;
+  }
+  main .form-contacts .form-contact form .full-name,
+main .form-contacts .form-contact form .contacts {
+    gap: 30px;
+    flex-direction: column;
+  }
+  main .form-contacts .get-in-touch {
+    padding: 30px 20px;
+  }
+  main .form-contacts .get-in-touch p, main .form-contacts .get-in-touch h4 {
+    text-align: unset;
+  }
+  main .form-contacts .get-in-touch .contact-container .contact {
+    max-width: unset;
+  }
+  main .form-contacts .get-in-touch .contact-container .contact:last-child {
+    margin-bottom: 0;
+  }
+  main .form-contacts .get-in-touch .contact-container .contact svg {
+    width: 20px;
+    height: 20px;
+  }
+  main .form-contacts .get-in-touch .links {
+    gap: 20px;
+  }
+  main .form-contacts .get-in-touch .links a {
+    width: 30px;
+    height: 30px;
+    margin-right: 0;
+  }
+  main .form-contacts .get-in-touch .links a::after {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 430px) {
+  main {
+    margin: 0 15px;
+  }
+  main .form-contacts .form-contact h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  main .form-contacts .form-contact p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  main .form-contacts .get-in-touch h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 15px;
+  }
+  main .form-contacts .get-in-touch .contact-container .contact {
+    padding-left: 20px;
+  }
+  main .form-contacts .get-in-touch .contact-container .contact i {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
